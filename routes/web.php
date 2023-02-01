@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['prefix'=>'admin'], function(){
+   Route::get('/', [App\Http\Controllers\AdminController::class, 'index'])->name('home');
+});

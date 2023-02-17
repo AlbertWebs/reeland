@@ -5,7 +5,24 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Reeland Realty Limited</title>
+{{-- Meta Tags --}}
+<title>Reeland Realty Limited - Real Estate in kenya</title>
+<link rel="canonical" href="{{url('/')}}">
+<meta name="description" content="Reeland Realty Limited">
+<meta name="author" content="Designekta Studios">
+
+<meta property="og:site_name" content="Reeland Realty Limited">
+<meta property="og:url" content="{{url('/')}}">
+<meta property="og:title" content="Reeland Realty Limited - Real Estate in kenya">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Reeland Realty Limited">
+
+<meta name="twitter:site" content="@reeland">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reeland Realty Limited - Real Estate in kenya">
+<meta name="twitter:description" content="Reeland Realty Limited">
+{{-- Meta Tags --}}
+
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/bootstrap.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/font-awesome.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/reality-icon.css')}}">

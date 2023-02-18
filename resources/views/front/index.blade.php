@@ -142,7 +142,7 @@
                   <span><a href="#."><i class="icon-like"></i></a></span>
                   <a href="property_detail1.html">
                     <h3>Park Avenue Apartment</h3>
-                    <p>Towson London, MR 21501</p>
+                    <p>Lavington Nairobi, MR 21501</p>
                   </a>
                   <div class="favroute clearfix">
                     <div class="property_meta"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span><span><i class=" icon-bed"></i>3 Bedrooms</span><span><i class="icon-safety-shower"></i>2 Bedrooms</span><span class="border-l">$38,600 / pm</span></div>
@@ -162,7 +162,7 @@
                   <span><a href="#."><i class="icon-like"></i></a></span>
                   <a href="property_detail2.html">
                     <h3>Park Avenue Apartment</h3>
-                    <p>Towson London, MR 21501</p>
+                    <p>Lavington Nairobi, MR 21501</p>
                   </a>
                   <div class="favroute clearfix">
                     <div class="property_meta"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span><span><i class=" icon-bed"></i>3 Bedrooms</span><span><i class="icon-safety-shower"></i>2 Bedrooms</span><span class="border-l">$38,600 / pm</span></div>
@@ -182,7 +182,7 @@
                   <span><a href="#."><i class="icon-like"></i></a></span>
                   <a href="property_detail3.html">
                     <h3>Park Avenue Apartment</h3>
-                    <p>Towson London, MR 21501</p>
+                    <p>Lavington Nairobi, MR 21501</p>
                   </a>
                   <div class="favroute clearfix">
                     <div class="property_meta"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span><span><i class=" icon-bed"></i>3 Bedrooms</span><span><i class="icon-safety-shower"></i>2 Bedrooms</span><span class="border-l">$38,600 / pm</span></div>
@@ -202,7 +202,7 @@
                   <span><a href="#."><i class="icon-like"></i></a></span>
                   <a href="property_detail1.html">
                     <h3>Park Avenue Apartment</h3>
-                    <p>Towson London, MR 21501</p>
+                    <p>Lavington Nairobi, MR 21501</p>
                   </a>
                   <div class="favroute clearfix">
                     <div class="property_meta"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span><span><i class=" icon-bed"></i>3 Bedrooms</span><span><i class="icon-safety-shower"></i>2 Bedrooms</span><span class="border-l">$38,600 / pm</span></div>
@@ -244,7 +244,7 @@
             <div class="property_item">
               <div class="property_head text-center">
                 <h3 class="captlize"><a href="property_detail1.html">Historic Town House</a></h3>
-                <p>45 Regent Street, London, UK</p>
+                <p>45 Regent Street, Nairobi, Kenya</p>
               </div>
               <div class="image">
                 <a href="property_detail1.html"><img src="{{asset('theme/images/latest1.jpg')}}" alt="latest property" class="img-responsive"></a>
@@ -283,7 +283,7 @@
               <div class="property_head default_clr text-center">
                 <img src="{{asset('theme/images/favruite.png')}}" alt="property" class="start_tag">
                 <h3 class="captlize"><a href="property_detail2.html">Historic Town House</a></h3>
-                <p>45 Regent Street, London, UK</p>
+                <p>45 Regent Street, Nairobi, Kenya</p>
               </div>
               <div class="image">
                 <a href="property_detail2.html"> <img src="{{asset('theme/images/latest2.jpg')}}" alt="latest property" class="img-responsive"></a>
@@ -321,7 +321,7 @@
             <div class="property_item">
               <div class="property_head text-center">
                 <h3 class="captlize"><a href="property_detail3.html">Historic Town House</a></h3>
-                <p>45 Regent Street, London, UK</p>
+                <p>45 Regent Street, Nairobi, Kenya</p>
               </div>
               <div class="image">
                 <a href="property_detail3.html"><img src="{{asset('theme/images/latest3.jpg')}}" alt="latest property" class="img-responsive"></a>
@@ -359,7 +359,7 @@
             <div class="property_item">
               <div class="property_head text-center">
                 <h3 class="captlize"><a href="property_detail1.html">Historic Town House</a></h3>
-                <p>45 Regent Street, London, UK</p>
+                <p>45 Regent Street, Nairobi, Kenya</p>
               </div>
               <div class="image">
                 <a href="property_detail1.html"><img src="{{asset('theme/images/latest4.jpg')}}" alt="latest property" class="img-responsive"></a>
@@ -398,7 +398,7 @@
               <div class="property_head default_clr text-center">
                 <img src="{{asset('theme/images/favruite.png')}}" alt="property" class="start_tag">
                 <h3 class="captlize"><a href="property_detail2.html">Historic Town House</a></h3>
-                <p>45 Regent Street, London, UK</p>
+                <p>45 Regent Street, Nairobi, Kenya</p>
               </div>
               <div class="image">
                 <a href="property_detail2.html"> <img src="{{asset('theme/images/latest5.jpg')}}" alt="latest property" class="img-responsive"></a>
@@ -436,7 +436,7 @@
             <div class="property_item">
               <div class="property_head text-center">
                 <h3 class="captlize"><a href="#.">Historic Town House</a></h3>
-                <p>45 Regent Street, London, UK</p>
+                <p>45 Regent Street, Nairobi, Kenya</p>
               </div>
               <div class="image">
                 <a href="#."><img src="{{asset('theme/images/latest6.jpg')}}" alt="latest property" class="img-responsive"></a>
@@ -524,7 +524,7 @@
         <div class="col-sm-4 text-center">
           <div class="agent_wrap margin40">
             <div class="image">
-              <img src="{{asset('theme/images/agent-one.jpg')}}" alt="Agents">
+              <img src="{{asset('theme/images/pexels-andrew-personal-training-733500.jpg')}}" alt="Agents">
               <div class="overlay">
               <div class="centered text-center">
               <ul class="social_share">
@@ -537,7 +537,7 @@
               </div>
             </div>
             <div class="agent_text">
-              <h3>Bohdan Kononets</h3>
+              <h3>Alex  Kipchoge</h3>
               <p>sales executive</p>
               <p class="bottom20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam</p>
               <a class="btn-more" href="javascript:void(0)">
@@ -549,7 +549,7 @@
         <div class="col-sm-4 text-center">
           <div class="agent_wrap margin40">
             <div class="image">
-              <img src="{{asset('theme/images/agent-two.jpg')}}" alt="Agents">
+              <img src="{{asset('theme/images/pexels-andrew-personal-training-733500.jpg')}}" alt="Agents">
               <div class="overlay">
               <div class="centered text-center">
               <ul class="social_share">
@@ -562,7 +562,7 @@
               </div>
             </div>
             <div class="agent_text">
-              <h3>Bohdan Kononets</h3>
+              <h3>Alex  Kipchoge</h3>
               <p>sales executive</p>
               <p class="bottom20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam</p>
               <a class="btn-more" href="javascript:void(0)">
@@ -574,7 +574,7 @@
         <div class="col-sm-4 text-center">
           <div class="agent_wrap margin40">
             <div class="image">
-              <img src="{{asset('theme/images/agent-three.jpg')}}" alt="Agents">
+              <img src="{{asset('theme/images/pexels-andrew-personal-training-733500.jpg')}}" alt="Agents">
               <div class="overlay">
               <div class="centered text-center">
               <ul class="social_share">
@@ -587,7 +587,7 @@
               </div>
             </div>
             <div class="agent_text">
-              <h3>Bohdan Kononets</h3>
+              <h3>Alex  Kipchoge</h3>
               <p>sales executive</p>
               <p class="bottom20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam</p>
               <a class="btn-more" href="javascript:void(0)">

@@ -24,11 +24,11 @@
                           <h2>get in touch</h2>
                       </div>
                       <div class="agetn-contact-2 bottom30">
-                             <p><i class="icon-telephone114"></i> (+01) 34 56 7890</p>
-                           <p><i class=" icon-icons142"></i> info@castle.com</p>
+                             <p><i class="icon-telephone114"></i> (+254) 72 301 4032</p>
+                           <p><i class=" icon-icons142"></i> info@reeland.co.ke</p>
 
-                           <p><i class="icon-browser2"></i>www.castle.com</p>
-                           <p><i class="icon-icons74"></i> Advisor Melbourne, Merrick Way, FL 12345 Australia</p>
+                           <p><i class="icon-browser2"></i>www.reeland.co.ke</p>
+                           <p><i class="icon-icons74"></i> Advisor Melbourne, Waiyaki Way, FL 12345 Nairobi</p>
                         </div>
                       <ul class="social_share bottom20">
               <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i></a></li>

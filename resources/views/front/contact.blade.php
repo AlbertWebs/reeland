@@ -28,7 +28,7 @@
                            <p><i class=" icon-icons142"></i> info@reeland.co.ke</p>
 
                            <p><i class="icon-browser2"></i>www.reeland.co.ke</p>
-                           <p><i class="icon-icons74"></i> Advisor Melbourne, Waiyaki Way, FL 12345 Nairobi</p>
+                           <p><i class="icon-icons74"></i> Windsor Starehe, Waiyaki Way, FL 12345 Nairobi</p>
                         </div>
                       <ul class="social_share bottom20">
               <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i></a></li>

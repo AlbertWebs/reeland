@@ -30,4 +30,16 @@ class HomeController extends Controller
     {
         return view('front.contact');
     }
+
+    public function rent(){
+        return view('front.rent');
+    }
+
+    public function sale(){
+        return view('front.sale');
+    }
+
+    public function property(){
+        return view('front.property');
+    }
 }

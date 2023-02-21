@@ -38,7 +38,7 @@
                 <div class="col-xs-6"><span><i class="icon-garage"></i>1 Garage</span></div>
               </div>
               <div class="bottom_text top10">
-                <p> <i class="icon-icons74"></i>Bayonne, New Jersey</p>
+                <p> <i class="icon-icons74"></i>Runda, Nairobi</p>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
                 <div class="col-xs-6"><span><i class="icon-garage"></i>1 Garage</span></div>
               </div>
               <div class="bottom_text top10">
-                <p> <i class="icon-icons74"></i>Bayonne, New Jersey</p>
+                <p> <i class="icon-icons74"></i>Runda, Nairobi</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
                 <div class="col-xs-6"><span><i class="icon-garage"></i>1 Garage</span></div>
               </div>
               <div class="bottom_text top10">
-                <p> <i class="icon-icons74"></i>Bayonne, New Jersey</p>
+                <p> <i class="icon-icons74"></i>Runda, Nairobi</p>
               </div>
             </div>
           </div>

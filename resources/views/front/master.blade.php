@@ -55,16 +55,16 @@
   <div class="topbar white border">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
-          <p>We are Best in Town With 40 years of Experience.</p>
+        <div class="col-md-6">
+          <p>Registered Valuers, Estate Agents, Property Managers & Consultants</p>
         </div>
-        <div class="col-md-7 text-right">
+        <div class="col-md-6 text-right">
           <ul class="breadcrumb_top text-right">
-            <li><a href="favorite_properties.html"><i class="icon-icons43"></i>Favorites</a></li>
-      <li><a href="submit_property.html"><i class="icon-icons215"></i>Submit Property</a></li>
-      <li><a href="my_properties.html"><i class="icon-icons215"></i>My Property</a></li>
-      <li><a href="profile.html"><i class="icon-icons230"></i>Profile</a></li>
-      <li><a href="login.html"><i class="icon-icons179"></i>Login / Register</a></li>
+            <li><a href="{{url('/')}}/contact-us"><i class="icon-telephone114"></i>Contact Us</a></li>
+      <li><a href="{{url('/')}}/account/add-property"><i class="icon-icons215"></i>Submit Property</a></li>
+      <li><a href="{{url('/')}}/account/my-properties"><i class="icon-icons215"></i>My Property</a></li>
+      <li><a href="{{url('/')}}/account/profile"><i class="icon-icons230"></i>Profile</a></li>
+      <li><a href="{{url('/')}}/account"><i class="icon-icons179"></i>Login / Register</a></li>
           </ul>
         </div>
       </div>
@@ -77,7 +77,7 @@
           <div class="icons"><i class="icon-telephone114"></i></div>
           <ul>
             <li><strong>Phone Number</strong></li>
-            <li>+254 72 301 4032</li>
+            <li>+254 711 880047</li>
           </ul>
         </div>
       </div>
@@ -86,7 +86,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
         <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="index3.html"><img src="{{asset('theme/images/logo.png')}}" class="logo" alt=""></a>
+        <a class="navbar-brand" href="{{url('/')}}"><img style="max-width:200px" src="{{asset('uploads/Small-Web-Logo.jpg')}}" class="logo" alt=""></a>
       </div>
       <!-- End Header Navigation -->
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -98,7 +98,7 @@
               <li class="dropdown">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Sale </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Houses for Sale</a></li>
+                    <li><a href="{{url('properties/for-rent')}}">Houses for Sale</a></li>
                     <li><a href="#">Appartments for Sale</a></li>
                     <li><a href="#">Land For Sale</a></li>
                     <li><a href="#">Commercial Property For Sale</a></li>
@@ -107,22 +107,22 @@
               <li class="dropdown">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Rent </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Houses for Rent</a></li>
+                    <li><a href="{{url('properties/for-sale')}}">Houses for Rent</a></li>
                     <li><a href="#">Appartments for Rent</a></li>
                     <li><a href="#">Land For Rent</a></li>
                     <li><a href="#">Commercial Property For Rent</a></li>
                   </ul>
               </li>
-              <li class="dropdown">
+              {{-- <li class="dropdown">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">Real Estate Projects </a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Development Maps</a></li>
                     <li><a href="#">Develoment Projects</a></li>
                   </ul>
-              </li>
+              </li> --}}
 
-              <li><a href="{{url('/')}}/contact-us">Contact Us</a></li>
-              <li><a href="#">Add Listing</a></li>
+              <li><a href="tel:+254 711 880047"><span class="fa fa-phone"></span> Talk to Us</a></li>
+              <li><a class="advanced text-center border_radius" href="#">Add Listing</a></li>
             </ul>
       </div>
     </div>
@@ -351,7 +351,7 @@
           <div class="icons"><i class="icon-telephone114"></i></div>
           <ul class="text-center">
             <li><strong>Phone Number</strong></li>
-            <li>+254 72 301 4032</li>
+            <li>+254 738 171937</li>
           </ul>
         </div>
       </div>
@@ -359,8 +359,8 @@
         <div class="info-box">
           <div class="icons"><i class="icon-icons74"></i></div>
           <ul class="text-center">
-            <li><strong>Manhattan Hall,</strong></li>
-            <li>Castle Melbourne, australia</li>
+            <li><strong>3571 Riverside Downs,</strong></li>
+            <li>Gitaru Road, Nairobi</li>
           </ul>
         </div>
       </div>
@@ -369,7 +369,7 @@
           <div class="icons"><i class="icon-icons142"></i></div>
           <ul class="text-center">
             <li><strong>Email Address</strong></li>
-            <li><a href="#.">info@castle.com</a></li>
+            <li><a href="#.">info@reeland.co.ke</a></li>
           </ul>
         </div>
       </div>
@@ -377,17 +377,16 @@
   </div>
   <div class="container padding_top">
     <div class="row">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="footer_panel bottom30">
-          <a href="#." class="logo bottom30"><img src="{{asset('theme/images/logo-white.png')}}" alt="logo"></a>
-          <p class="bottom15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-            tempor cum consectetuer
-            adipiscing.
+          <a href="#." class="logo bottom30"><img style="max-width:300px" src="{{asset('uploads/Small-Web-Logo.jpg')}}" alt="logo"></a>
+          <p class="bottom15">
+            Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.
           </p>
-          <p class="bottom15">If you are interested in castle do not wait and <a href="#.">BUY IT NOW!</a></p>
+          {{-- <p class="bottom15">If you are interested in castle do not wait and <a href="#.">BUY IT NOW!</a></p> --}}
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="footer_panel bottom30">
           <h4 class="bottom30 heading">Search by Area</h4>
           <table style="width:100%;">
@@ -416,7 +415,7 @@
           </table>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="footer_panel bottom30">
           <h4 class="bottom30 heading">Latest News</h4>
           <div class="media bottom30">
@@ -433,18 +432,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="footer_panel bottom30">
-          <h4 class="bottom30 heading">Subscribe</h4>
-          <p>Sign up with your email to get latest updates and offers</p>
-          <form class="top30">
-            <input class="search" placeholder="Enter your Email" type="search">
-            <a class="button_s" href="#.">
-            <i class="icon-mail-envelope-open"></i>
-            </a>
-          </form>
-        </div>
-      </div>
+
     </div>
     <!--CopyRight-->
     <div class="copyright_simple">

@@ -17,9 +17,9 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 
 Route::group(['prefix'=>'properties'], function(){
-    Route::get('/{details}', [App\Http\Controllers\HomeController::class, 'property'])->name('for-sale');
     Route::get('/for-rent', [App\Http\Controllers\HomeController::class, 'rent'])->name('for-rent');
     Route::get('/for-sale', [App\Http\Controllers\HomeController::class, 'sale'])->name('for-sale');
+    Route::get('/explore/{details}', [App\Http\Controllers\HomeController::class, 'property'])->name('details');
 });
 
 Auth::routes();

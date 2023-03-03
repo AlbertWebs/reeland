@@ -119,6 +119,56 @@
     </div>
   </div>
   <!--Slider ends-->
+  <!--Best Deal Properties-->
+<section id="deals" class="padding bg_light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <h2 class="uppercase">About Us</h2>
+          <p class="heading_space">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="full-slider" class="owl-carousel">
+            <div class="item">
+              <div class="media deal_media proerty_content">
+                <div class="media-left">
+                  <a href="{{url('/')}}/our-services">
+                  <img class="media-object" style="border-radius:10px;" src="{{asset('theme/images/best-deal1.jpg')}}" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+
+                  <div class="proerty_text">
+                    <h3 class="bottom15"> <a href="{{url('/')}}/our-services" style="color:#b3864d">Valuation Services</a></h3>
+                    <p>The company provides expertise valuation of fixed and movable assets i.e. land, buildings, plant & machinery, petrol stations, oil depots, equipment, motor vehicles, chattels and stock amongst others for purposes of advisory....</p>
+                  </div>
+
+                  <div class="proerty_text">
+                    <h3 class="bottom15"> <a href="{{url('/')}}/our-services" style="color:#b3864d">Agency (Letting and Sales) Services</a></h3>
+                    <p>
+                        This involves letting and selling of commercial, residential, office, industrial and agricultural properties at optimum value to meet our clients’ satisfaction. The process involves assessment of the current market value/ rent of the property before the property is placed in the market.
+                    </p>
+                  </div>
+
+                  <div class="proerty_text">
+                    <h3 class="bottom15"> <a href="{{url('/')}}/our-services" style="color:#b3864d">Management Services</a></h3>
+                    <p>The company provides both property and facility management services to our esteemed clients.</p>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Best Deal Properties Ends-->
 
 
   <!--Deals-->

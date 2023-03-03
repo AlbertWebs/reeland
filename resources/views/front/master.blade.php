@@ -421,13 +421,13 @@
           <div class="media bottom30">
             <div class="media-body">
               <a href="#.">Nearest mall in high tech Goes your villa</a>
-              <span><i class="icon-clock4"></i>Feb 22, 2017</span>
+              <span><i class="icon-clock4"></i>Feb 22, 2023</span>
             </div>
           </div>
           <div class="media">
             <div class="media-body">
-              <a href="#.">Nearest mall in high tech Goes your villa</a>
-              <span><i class="icon-clock4"></i>Feb 22, 2017</span>
+              <a href="#.">China Square Mall Goes Viral</a>
+              <span><i class="icon-clock4"></i>Feb 22, 2023</span>
             </div>
           </div>
         </div>

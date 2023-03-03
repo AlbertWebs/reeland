@@ -42,4 +42,18 @@ class HomeController extends Controller
     public function property(){
         return view('front.property');
     }
+
+    public function services(){
+        $Services = \App\Models\Service::all();
+        return view('front.services', compact('Services'));
+    }
+
+    public function service($slung){
+        $Services = \App\Models\Service::where('slung',$slung)->get();
+        return view('front.service', compact('Services'));
+    }
+
+
+
+
 }

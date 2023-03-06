@@ -35,7 +35,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/range-Slider.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/search.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/style.css')}}">
-<link rel="icon" href="{{asset('theme/images/icon.png')}}" >
+@include('favicon')
 </head>
 <body>
 

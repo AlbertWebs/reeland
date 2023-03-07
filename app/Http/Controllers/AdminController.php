@@ -709,6 +709,11 @@ class AdminController extends Controller
         }
         $updateDetails = array(
             'name'=>$request->title,
+            'location'=>$request->location,
+            'bedroom'=>$request->bedroom,
+            'bathroom'=>$request->bathroom,
+            'type'=>$request->type,
+            'sqft'=>$request->sqft,
             'slung' => Str::slug($request->title),
             'content'=>$request->content,
             'meta'=>$request->meta,

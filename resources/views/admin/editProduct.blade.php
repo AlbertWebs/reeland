@@ -58,8 +58,20 @@
                                     <label for="list-title">Product Price</label>
                                 </div>
                                 <div class="input-field col s12">
-                                    <input autocomplete="off" name="sku" id="list-title" value="{{$Product->sku}}" type="text" placeholder="SKU-01" class="validate" readonly required>
-                                    <label for="list-title">SKU</label>
+                                    <input autocomplete="off" name="bedroom" id="list-title" value="{{$Product->bedroom}}" type="text" class="validate" required>
+                                    <label for="list-title">Bedrooms</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="bathroom" id="list-title" type="text" value="{{$Product->bathroom}}" class="validate" required>
+                                    <label for="list-title">Bathroom</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="location" id="list-title" type="text" value="{{$Product->location}}" class="validate" required>
+                                    <label for="list-title">Location</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="sqft" id="list-title" type="text" value="{{$Product->sqft}}" class="validate" >
+                                    <label for="list-title">SQFT</label>
                                 </div>
 
 
@@ -83,50 +95,35 @@
                                 <div class="section-space col s12"></div>
                             </div>
 
-                            <div class="row">
 
-                                {{--  --}}
-                                <div class="input-field col s12">
-                                    <select required name="brand" class="icons" id="mydiv">
-                                        <?php $CategorySelected = DB::table('brands')->where('title',$Product->brand)->get() ?>
-                                        @foreach ($CategorySelected as $CatSel)
-                                        <option value="{{$CatSel->title}}" selected>{{$CatSel->title}}</option>
-                                        @endforeach
-                                        <?php $Brand = DB::table('brands')->get(); ?>
-                                        @foreach ($Brand as $brands)
-                                        <option value="{{$brands->title}}" data-icon="{{url('/')}}/uploads/brands/{{$brands->image}}" class="circle">{{$brands->title}}</option>
-                                        @endforeach
-                                    </select>
-                                    <label>Choose Category</label>
-                                </div>
 
-                                <div class="section-space col s12"></div>
-                            </div>
 
-                            {{--  --}}
                             <div class="row">
 
                                 {{--  --}}
                                 <div class="input-field col s12">
                                     <select required name="condition" class="icons" id="mydiv">
-                                        <option value="{{$Product->pro_condition}}" selected>{{$Product->pro_condition}}</option>
+                                        <option value="{{$Product->pro_condition}}"  selected>{{$Product->pro_condition}}</option>
 
-                                        <option value="Ex-UK"  class="circle">Ex-UK</option>
+                                        <option value="Renovated"  class="circle">Renovated</option>
                                         <option value="New"  class="circle">New</option>
 
                                     </select>
-                                    <label>Product Condition</label>
+                                    <label>Property Condition</label>
                                 </div>
 
                                 {{--  --}}
                                 <div class="section-space col s12"></div>
                             </div>
-                            {{--  --}}
+
+
+
+
                             {{-- Stock --}}
                             <div class="input-field col s6">
                                 <div class="box-inn-sp box-second-inn">
                                     <div class="inn-title">
-                                        <h4>Stock Status</h4>
+                                        <h4>Availability Status</h4>
                                     </div>
                                     <div class="tab-inn">
                                         @if($Product->stock == 'Out Of Stock')

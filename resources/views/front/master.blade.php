@@ -115,9 +115,13 @@
                   </ul>
               </li>
 
+              <li class="dropdown active">
+                <a href="{{url('/')}}/our-services">Our Services  </a>
+              </li>
+
 
               <li><a href="tel:+254 711 880047"><span class="fa fa-phone"></span> Talk to Us</a></li>
-              <li><a class="advanced text-center border_radius" href="#">Add Listing</a></li>
+              {{-- <li><a class="advanced text-center border_radius" href="#">Add Listing</a></li> --}}
             </ul>
       </div>
     </div>

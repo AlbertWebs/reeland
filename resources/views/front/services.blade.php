@@ -29,7 +29,7 @@
         @foreach ($Services as $Ser)
         <div class="col-md-4 col-sm-6 col-xs-12 heading_space">
             <div class="sim-lar-p">
-              <div class="image bottom20"><img style="border-radius:10px" src="{{asset('theme/images/blog-1.jpg')}}" alt="image"></div>
+              <div class="image bottom20"><img style="border-radius:10px" src="{{url('/')}}/uploads/services/{{$Ser->image}}" alt="image"></div>
               <div class="sim-lar-text">
                 <h3 class="bottom10" style="min-height:60px"><a href="{{url('/')}}/our-services/{{$Ser->slung}}">{{$Ser->title}}</a></h3>
                 {{-- <p><span>By:</span> Admin <span>|</span> <span>Date:</span> Feb 22, 2017</p> --}}

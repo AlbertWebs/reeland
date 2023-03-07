@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -23,8 +25,30 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('front.index');
+        $Featured = DB::table('products')->orderBy('id','DESC')->where('featured','1')->limit('4')->get();
+        $Best = DB::table('products')->orderBy('id','ASC')->where('featured','1')->limit('4')->get();
+        return view('front.index', compact('Featured','Best'));
     }
+
+    public function rent_cat($cat){
+        $Category = Category::where('slung',$cat)->get();
+        foreach($Category as $Cat){
+            $Property = DB::table('products')->where('category',$Cat->id)->where('type','rent')->get();
+            // dd($Property);
+            return view('front.rent', compact('Property'));
+        }
+    }
+
+    public function sale_cat($cat){
+        $Category = Category::where('slung',$cat)->get();
+        foreach($Category as $Cat){
+            $Property = DB::table('products')->where('category',$Cat->id)->where('type','sale')->get();
+            // dd($Property);
+            return view('front.sale', compact('Property'));
+        }
+    }
+
+
 
     public function contact()
     {
@@ -32,7 +56,8 @@ class HomeController extends Controller
     }
 
     public function rent(){
-        return view('front.rent');
+        $Rent = DB::table('products')->where('category','rent')->limit('4')->get();
+        return view('front.rent', compact('Rent'));
     }
 
     public function sale(){

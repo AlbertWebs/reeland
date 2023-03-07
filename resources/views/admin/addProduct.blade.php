@@ -57,6 +57,23 @@
                                     <input autocomplete="off" name="price" id="list-title"  type="number" class="validate" required>
                                     <label for="list-title">Product Price</label>
                                 </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="bedrooms" id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">Bedrooms</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="bathroom" id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">Bathroom</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="location" id="list-title" type="text" class="validate" required>
+                                    <label for="list-title">Location</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input autocomplete="off" name="sqft" id="list-title" type="text" class="validate" >
+                                    <label for="list-title">SQFT</label>
+                                </div>
+
                                 {{-- <div class="input-field col s12">
                                     <input autocomplete="off" name="sku" id="list-title" type="text" placeholder="SKU-01" class="validate" required>
                                     <label for="list-title">SKU</label>
@@ -94,7 +111,7 @@
 
                                 {{--  --}}
                                 <div class="input-field col s12">
-                                    <select required name="category" class="icons" id="mydiv">
+                                    <select required name="type" class="icons" id="mydiv">
                                         <option value="" disabled selected>Choose your Type</option>
                                         <option value="sale" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Sale</option>
                                         <option value="rent" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Rent</option>
@@ -113,7 +130,7 @@
                                 {{--  --}}
                                 <div class="input-field col s12">
                                     <select required name="condition" class="icons" id="mydiv">
-                                        <option value="" disabled selected>Choose Product Condition</option>
+                                        <option value="" disabled selected>Choose Property Condition</option>
 
                                         <option value="Renovated"  class="circle">Renovated</option>
                                         <option value="New"  class="circle">New</option>

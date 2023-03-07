@@ -98,28 +98,23 @@
               <li class="dropdown">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Sale </a>
                 <ul class="dropdown-menu">
-                    <li><a href="{{url('properties/for-rent')}}">Houses for Sale</a></li>
-                    <li><a href="#">Appartments for Sale</a></li>
-                    <li><a href="#">Land For Sale</a></li>
-                    <li><a href="#">Commercial Property For Sale</a></li>
+                    <?php
+                       $Category = DB::table('categories')->get();
+                    ?>
+                    @foreach ($Category as $Cat)
+                      <li><a href="{{url('properties/for-sale')}}/{{$Cat->slung}}">{{$Cat->title}} for Sale</a></li>
+                    @endforeach
                   </ul>
               </li>
               <li class="dropdown">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Rent </a>
                 <ul class="dropdown-menu">
-                    <li><a href="{{url('properties/for-sale')}}">Houses for Rent</a></li>
-                    <li><a href="#">Appartments for Rent</a></li>
-                    <li><a href="#">Land For Rent</a></li>
-                    <li><a href="#">Commercial Property For Rent</a></li>
+                    @foreach ($Category as $Cat)
+                    <li><a href="{{url('properties/for-rent')}}/{{$Cat->slung}}">{{$Cat->title}} for Sale</a></li>
+                  @endforeach
                   </ul>
               </li>
-              {{-- <li class="dropdown">
-                <a href="#." class="dropdown-toggle" data-toggle="dropdown">Real Estate Projects </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Development Maps</a></li>
-                    <li><a href="#">Develoment Projects</a></li>
-                  </ul>
-              </li> --}}
+
 
               <li><a href="tel:+254 711 880047"><span class="fa fa-phone"></span> Talk to Us</a></li>
               <li><a class="advanced text-center border_radius" href="#">Add Listing</a></li>

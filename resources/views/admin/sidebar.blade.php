@@ -50,9 +50,9 @@
               <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Products </a>
                 <div class="collapsible-body left-sub-menu">
                     <ul>
-                        <li><a href="{{url('/')}}/admin/products">All Products </a>
+                        <li><a href="{{url('/')}}/admin/products">All Properties </a>
                         </li>
-                        <li><a href="{{url('/')}}/admin/addProduct">Add Product</a>
+                        <li><a href="{{url('/')}}/admin/addProduct">Add Property</a>
                         </li>
                         <li><a href="{{url('/')}}/admin/variations/color">All Color Variations </a>
                         </li>

@@ -54,14 +54,14 @@
                         </li>
                         <li><a href="{{url('/')}}/admin/addProduct">Add Property</a>
                         </li>
-                        <li><a href="{{url('/')}}/admin/variations/color">All Color Variations </a>
+                        {{-- <li><a href="{{url('/')}}/admin/variations/color">All Color Variations </a>
                         </li>
                         <li><a href="{{url('/')}}/admin/variations/size">All Size Variations </a>
                         </li>
                         <li><a href="{{url('/')}}/admin/addVariation/color">Add Color Variation</a>
                         </li>
                         <li><a href="{{url('/')}}/admin/addVariation/size">Add Size Variation</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </li>

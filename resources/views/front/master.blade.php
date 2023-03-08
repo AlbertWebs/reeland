@@ -351,6 +351,8 @@
           <ul class="text-center">
             <li><strong>Phone Number</strong></li>
             <li>+254 738 171937</li>
+            <li>+254 711 880047</li>
+
           </ul>
         </div>
       </div>
@@ -358,7 +360,7 @@
         <div class="info-box">
           <div class="icons"><i class="icon-icons74"></i></div>
           <ul class="text-center">
-            <li><strong>3571 Riverside Downs,</strong></li>
+            <li><strong>Le'Mac Building, Waiyaki Way,  Church Rd, Nairobi</strong></li>
             <li>Gitaru Road, Nairobi</li>
           </ul>
         </div>
@@ -368,7 +370,8 @@
           <div class="icons"><i class="icon-icons142"></i></div>
           <ul class="text-center">
             <li><strong>Email Address</strong></li>
-            <li><a href="#.">info@reeland.co.ke</a></li>
+            <li><a href="mailto:info@reeland.co.ke">info@reeland.co.ke</a></li>
+            <li><a href="mailto:hello@reeland.co.ke">hello@reeland.co.ke</a></li>
           </ul>
         </div>
       </div>

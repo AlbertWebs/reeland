@@ -609,7 +609,12 @@ class AdminController extends Controller
         $path = 'uploads/products';
         if(isset($request->image_one)){
             $file = $request->file('image_one');
-            $filename = $file->getClientOriginalName();
+            //
+            $extension = $file->getClientOriginalExtension();
+            $image_one_temp = $request->title.'-reeland-image_one.'.$extension;
+            $filename = str_replace(' ', '-',$image_one_temp);
+            //
+            // $filename = $file->getClientOriginalName();
             $file->move($path, $filename);
             $image_one = $filename;
         }else{
@@ -618,7 +623,12 @@ class AdminController extends Controller
 
         if(isset($request->image_two)){
             $file = $request->file('image_two');
-            $filename = $file->getClientOriginalName();
+            // $filename = $file->getClientOriginalName();
+            //
+            $extension = $file->getClientOriginalExtension();
+            $image_one_temp = $request->title.'-reeland-image-two.'.$extension;
+            $filename = str_replace(' ', '-',$image_one_temp);
+            //
             $file->move($path, $filename);
             $image_two = $filename;
         }else{
@@ -627,7 +637,11 @@ class AdminController extends Controller
 
         if(isset($request->image_three)){
             $file = $request->file('image_three');
-            $filename = $file->getClientOriginalName();
+            // $filename = $file->getClientOriginalName();
+            $extension = $file->getClientOriginalExtension();
+            $image_one_temp = $request->title.'-reeland-image-three.'.$extension;
+            $filename = str_replace(' ', '-',$image_one_temp);
+            //
             $file->move($path, $filename);
             $image_three = $filename;
         }else{
@@ -668,7 +682,10 @@ class AdminController extends Controller
         $path = 'uploads/products';
             if(isset($request->image_one)){
                 $file = $request->file('image_one');
-                $filename = $file->getClientOriginalName();
+                // $filename = $file->getClientOriginalName();
+                $extension = $file->getClientOriginalExtension();
+                $image_one_temp = $request->title.'-reeland-image_one.'.$extension;
+                $filename = str_replace(' ', '-',$image_one_temp);
                 $file->move($path, $filename);
                 $image_one = $filename;
             }else{
@@ -677,7 +694,10 @@ class AdminController extends Controller
 
             if(isset($request->image_two)){
                 $file = $request->file('image_two');
-                $filename = $file->getClientOriginalName();
+                // $filename = $file->getClientOriginalName();
+                $extension = $file->getClientOriginalExtension();
+                $image_one_temp = $request->title.'-reeland-image_two.'.$extension;
+                $filename = str_replace(' ', '-',$image_one_temp);
                 $file->move($path, $filename);
                 $image_two = $filename;
             }else{
@@ -686,7 +706,10 @@ class AdminController extends Controller
 
             if(isset($request->image_three)){
                 $file = $request->file('image_three');
-                $filename = $file->getClientOriginalName();
+                // $filename = $file->getClientOriginalName();
+                $extension = $file->getClientOriginalExtension();
+                $image_one_temp = $request->title.'-reeland-image_three.'.$extension;
+                $filename = str_replace(' ', '-',$image_one_temp);
                 $file->move($path, $filename);
                 $image_three = $filename;
             }else{
@@ -694,7 +717,10 @@ class AdminController extends Controller
             }
             if(isset($request->image_four)){
                 $file = $request->file('image_four');
-                $filename = $file->getClientOriginalName();
+                // $filename = $file->getClientOriginalName();
+                $extension = $file->getClientOriginalExtension();
+                $image_one_temp = $request->title.'-reeland-image_four.'.$extension;
+                $filename = str_replace(' ', '-',$image_one_temp);
                 $file->move($path, $filename);
                 $image_four = $filename;
             }else{

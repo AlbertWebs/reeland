@@ -1,15 +1,14 @@
 @extends('front.master')
 
 @section('content')
-
-
+@foreach ($Property as $Pro)
 <!-- Property Detail -->
 <section id="property" class="padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 listing1 property-details">
-          <h2 class="text-uppercase">987 Cantebury Drive</h2>
-          <p class="bottom30">45 Regent Street, London, UK</p>
+          <h2 class="text-uppercase">{{$Pro->name}}</h2>
+          <p class="bottom30">{{$Pro->location}}</p>
           <div id="property-d-1" class="owl-carousel single">
             <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
             <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
@@ -29,17 +28,17 @@
             <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-2.jpg')}}" alt="image"/></div>
           </div>
           <div class="property_meta bg-black bottom40">
-            <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span>
-            <span><i class=" icon-microphone"></i>2 Office Rooms</span>
-            <span><i class="icon-safety-shower"></i>1 Bathroom</span>
+            <span><i class="icon-select-an-objecto-tool"></i>{{$Pro->sqft}} sq ft</span>
+            <span><i class=" icon-microphone"></i>{{$Pro->bedroom}} Bedrooms</span>
+            <span><i class="icon-safety-shower"></i>{{$Pro->bathroom}} Bathroom</span>
             <span><i class="icon-old-television"></i>TV Lounge</span>
             <span><i class="icon-garage"></i>1 Garage</span>
           </div>
           <h2 class="text-uppercase">Property Description</h2>
-          <p class="bottom30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt. Duis euismod placerat rhoncus. Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. Aliquam posuere fermentum lorem, a aliquam mauris rutrum a. Curabitur sit amet pretium lectus, nec consequat orci.</p>
-          <p class="bottom30">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et metus in libero sollicitudin venenatis eu sed enim. Nam felis lorem, suscipit ac nisl ac, iaculis dapibus tellus. Cras ante justo, aliquet quis placerat nec, molestie id turpis. </p>
+          <p class="bottom30">{!!html_entity_decode($Pro->content)!!}</p>
+
           <div class="text-it-p bottom40">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power nonummy nibh tempor cum soluta nobis eleifend option congue nihil imperdiet doming Lorem ipsum dolor sit amet. consectetuer elit sed diam power nonummy</p>
+            <p>{!!html_entity_decode($Pro->meta)!!}</p>
           </div>
           <h2 class="text-uppercase bottom20">Quick Summary</h2>
           <div class="row property-d-table bottom40">
@@ -48,27 +47,35 @@
                 <tbody>
                   <tr>
                     <td><b>Property Id</b></td>
-                    <td class="text-right">5456</td>
+                    <td class="text-right">{{$Pro->sku}}</td>
                   </tr>
+                  @if($Pro->type == "sale")
                   <tr>
                     <td><b>Price</b></td>
-                    <td class="text-right">$8,600 / month</td>
+                    <td class="text-right">kes {{$Pro->price}}</td>
                   </tr>
+                  @else
+                  <tr>
+                    <td><b>Price</b></td>
+                    <td class="text-right">kes {{$Pro->price}} / month</td>
+                  </tr>
+                  @endif
+
                   <tr>
                     <td><b>Property Size</b></td>
-                    <td class="text-right">5,500 ft2</td>
+                    <td class="text-right">{{$Pro->sqft}} sqft</td>
                   </tr>
                   <tr>
                     <td><b>Bedrooms</b></td>
-                    <td class="text-right">5</td>
+                    <td class="text-right">{{$Pro->bedroom}}</td>
                   </tr>
                   <tr>
                     <td><b>Bathrooms</b></td>
-                    <td class="text-right">3</td>
+                    <td class="text-right">{{$Pro->bathroom}}</td>
                   </tr>
                   <tr>
                     <td><b>Available From</b></td>
-                    <td class="text-right">22-04-2017</td>
+                    <td class="text-right">{{$Pro->created_at}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -78,34 +85,26 @@
                 <tbody>
                   <tr>
                     <td><b>Status</b></td>
-                    <td class="text-right">Rent</td>
+                    <td class="text-right">{{$Pro->type}}</td>
                   </tr>
                   <tr>
                     <td><b>Year Built</b></td>
-                    <td class="text-right">1991</td>
+                    <td class="text-right">N/A</td>
                   </tr>
                   <tr>
                     <td><b>Garages</b></td>
                     <td class="text-right">1</td>
                   </tr>
                   <tr>
-                    <td><b>Cross Streets</b></td>
-                    <td class="text-right">Nordoff</td>
-                  </tr>
-                  <tr>
-                    <td><b>Floors</b></td>
-                    <td class="text-right">Carpet - Ceramic Tile</td>
-                  </tr>
-                  <tr>
-                    <td><b>Plumbing</b></td>
-                    <td class="text-right">Full Copper Plumbing</td>
+                    <td><b>Location</b></td>
+                    <td class="text-right">{{$Pro->location}}</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <h2 class="text-uppercase bottom20">Features</h2>
-          <div class="row bottom40">
+          {{-- <h2 class="text-uppercase bottom20">Features</h2> --}}
+          {{-- <div class="row bottom40">
             <div class="col-md-4 col-sm-6 col-xs-12">
               <ul class="pro-list">
                 <li>
@@ -151,51 +150,91 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> --}}
           <h2 class="text-uppercase">Features</h2>
-          <p class="bottom20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet,
-            vulputate mauris. Ut adipiscing gravida tincidunt.
+          <p class="bottom20">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.
           </p>
           <div class="row bottom40">
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="pro-img">
                 <figure class="wpf-demo-gallery">
-                  <img src="{{asset('theme/images/property-details/property-d-1-f-1.jpg')}}" alt="image"/>
+                  <img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/>
                   <figcaption class="view-caption">
-                    <a data-fancybox-group="gallery" class="fancybox" href="images/property-details/property-d-1-f-1.jpg')}}"><i class="icon-focus"></i></a>
+                    <a data-fancybox-group="gallery" class="fancybox" href="{{url('/')}}/uploads/products/{{$Pro->image_one}}"><i class="icon-focus"></i></a>
                   </figcaption>
                 </figure>
               </div>
             </div>
+            @if($Pro->image_two == "0" OR $Pro->image_two == null)
+
+            @else
             <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="pro-img">
-                <figure class="wpf-demo-gallery">
-                  <img src="{{asset('theme/images/property-details/property-d-1-f-2.jpg')}}" alt="image"/>
-                  <figcaption class="view-caption">
-                    <a data-fancybox-group="gallery" class="fancybox" href="images/property-details/property-d-1-f-1.jpg')}}"><i class="icon-focus"></i></a>
-                  </figcaption>
-                </figure>
+                <div class="pro-img">
+                  <figure class="wpf-demo-gallery">
+                    <img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/>
+                    <figcaption class="view-caption">
+                      <a data-fancybox-group="gallery" class="fancybox" href="{{url('/')}}/uploads/products/{{$Pro->image_two}}"><i class="icon-focus"></i></a>
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
-            </div>
+            @endif
+
+            @if($Pro->image_three == "0" OR $Pro->image_three == null)
+
+            @else
             <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="pro-img">
-                <figure class="wpf-demo-gallery">
-                  <img src="{{asset('theme/images/property-details/property-d-1-f-3.jpg')}}" alt="image"/>
-                  <figcaption class="view-caption">
-                    <a data-fancybox-group="gallery" class="fancybox" href="images/property-details/property-d-1-f-1.jpg')}}"><i class="icon-focus"></i></a>
-                  </figcaption>
-                </figure>
+                <div class="pro-img">
+                  <figure class="wpf-demo-gallery">
+                    <img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/>
+                    <figcaption class="view-caption">
+                      <a data-fancybox-group="gallery" class="fancybox" href="{{url('/')}}/uploads/products/{{$Pro->image_three}}"><i class="icon-focus"></i></a>
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
-            </div>
+            @endif
+
+            @if($Pro->image_four == "0" OR $Pro->image_four == null)
+
+            @else
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="pro-img">
+                  <figure class="wpf-demo-gallery">
+                    <img src="{{url('/')}}/uploads/products/{{$Pro->image_four}}" alt="image"/>
+                    <figcaption class="view-caption">
+                      <a data-fancybox-group="gallery" class="fancybox" href="{{url('/')}}/uploads/products/{{$Pro->image_four}}"><i class="icon-focus"></i></a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            @endif
+
+            @if($Pro->image_two == "0" OR $Pro->image_two == null)
+
+            @else
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="pro-img">
+                  <figure class="wpf-demo-gallery">
+                    <img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/>
+                    <figcaption class="view-caption">
+                      <a data-fancybox-group="gallery" class="fancybox" href="{{url('/')}}/uploads/products/{{$Pro->image_two}}"><i class="icon-focus"></i></a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            @endif
           </div>
-          <h2 class="text-uppercase bottom20">Video Tour</h2>
+
+
+          {{-- <h2 class="text-uppercase bottom20">Virtual Tour</h2>
           <div class="row bottom40">
             <div class="col-md-12 padding-b-20">
               <div class="pro-video">
                 <figure class="wpf-demo-gallery">
                   <video  class="video" controls>
                     <source src="{{asset('theme/video/video.mp4')}}" type="video/mp4">
-                    {{-- <source src="{{asset('theme/video/video.html')}}" type="video/ogg"> --}}
+                    <source src="{{asset('theme/video/video.html')}}" type="video/ogg">
                   </video>
                 </figure>
               </div>
@@ -216,37 +255,37 @@
                 <span><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> Google +</a></span>
               </div>
             </div>
-          </div>
+          </div> --}}
           <h2 class="text-uppercase bottom20">Contact Agent</h2>
           <div class="row">
             <div class="col-sm-4 bottom40">
               <div class="agent_wrap">
                 <div class="image">
-                  <img src="{{asset('theme/images/agent-one.jpg')}}" alt="Agents">
+                  <img src="{{url('/')}}/theme/images/pexels-andrew-personal-training-733500.jpg" alt="Agents">
                 </div>
               </div>
             </div>
             <div class="col-sm-4 bottom40">
               <div class="agent_wrap">
-                <h3>Bohdan Kononets</h3>
+                <h3>Frank Karmanga </h3>
                 <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer adipiscing eleifend option congue nihil imperdiet doming…</p>
                 <table class="agent_contact table">
                   <tbody>
                     <tr class="bottom10">
                       <td><strong>Phone:</strong></td>
-                      <td class="text-right">(+01) 34 56 7890</td>
+                      <td class="text-right">+254 711 880047</td>
                     </tr>
                     <tr class="bottom10">
                       <td><strong>Mobile:</strong></td>
-                      <td class="text-right">(+033) 34 56 7890</td>
+                      <td class="text-right">+254 738 171937</td>
                     </tr>
                     <tr>
-                      <td><strong>Email Adress:</strong></td>
-                      <td class="text-right"><a href="#.">bohdan@castle.com</a></td>
+                      <td><strong>Email Address:</strong></td>
+                      <td class="text-right"><a href="#.">frank.karmanga@reeland.co.ke</a></td>
                     </tr>
                     <tr>
-                      <td><strong>Skype:</strong></td>
-                      <td class="text-right"><a href="#.">bohdan.kononets</a></td>
+                      <td><strong>Email Address:</strong></td>
+                      <td class="text-right"><a href="#.">hello@reeland.co.ke</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -256,7 +295,8 @@
                   <li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
                   <li><a href="#." class="google"><i class="icon-google4"></i></a></li>
                   <li><a href="#." class="linkden"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#." class="vimo"><i class="icon-vimeo3"></i></a></li>
+                  <li><a href="#." class="facebook"><i class="fa fa-whatsapp"></i></a></li>
+
                 </ul>
               </div>
             </div>
@@ -285,5 +325,6 @@
     </div>
   </section>
   <!--  Property Detail End -->
+  @endforeach
 
 @endsection

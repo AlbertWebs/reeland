@@ -24,7 +24,7 @@ Route::group(['prefix'=>'properties'], function(){
     Route::get('/for-sale', [App\Http\Controllers\HomeController::class, 'sale'])->name('for-sale');
     Route::get('/for-rent/{cat}', [App\Http\Controllers\HomeController::class, 'rent_cat'])->name('for-rent-category');
     Route::get('/for-sale/{cat}', [App\Http\Controllers\HomeController::class, 'sale_cat'])->name('for-sale-category');
-    Route::get('/explore/{details}', [App\Http\Controllers\HomeController::class, 'property'])->name('details');
+    Route::get('/explore/{slung}', [App\Http\Controllers\HomeController::class, 'property'])->name('details');
 });
 
 Auth::routes();

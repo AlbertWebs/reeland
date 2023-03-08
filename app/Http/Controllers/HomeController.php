@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Models\Category;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -64,8 +65,9 @@ class HomeController extends Controller
         return view('front.sale');
     }
 
-    public function property(){
-        return view('front.property');
+    public function property($slung){
+        $Property = Product::where('slung',$slung)->get();
+        return view('front.property', compact('Property'));
     }
 
     public function services(){

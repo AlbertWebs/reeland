@@ -191,7 +191,7 @@
                   <div class="listing_full_bg">
                     <div class="listing_inner_full">
                       <span><a href="#."><i class="icon-like"></i></a></span>
-                      <a style="min-height: 85px;" href="property_detail1.html">
+                      <a style="min-height: 85px;" href="{{url('/')}}/properties/explore/{{$featured->slung}}">
                         <h3>{{$featured->name}}</h3>
                         <p>{{$featured->location}}</p>
                       </a>
@@ -241,11 +241,11 @@
             <div class="item">
                 <div class="property_item">
                   <div class="property_head text-center">
-                    <h3 class="captlize" style="min-height:53px" ><a href="property_detail1.html">{{$best->name}}</a></h3>
+                    <h3 class="captlize" style="min-height:53px" ><a href="{{url('/')}}/properties/explore/{{$featured->slung}}">{{$best->name}}</a></h3>
                     <p>{{$best->location}}</p>
                   </div>
                   <div class="image">
-                    <a href="property_detail1.html"><img style="min-height:200px" src="{{url('/')}}/uploads/products/{{$best->image_one}}" alt="latest property" class="img-responsive"></a>
+                    <a href="{{url('/')}}/properties/explore/{{$best->slung}}"><img style="min-height:200px" src="{{url('/')}}/uploads/products/{{$best->image_one}}" alt="latest property" class="img-responsive"></a>
                     <div class="price lighter clearfix">
                       <span class="tag pull-right">For {{$best->type}}</span>
                     </div>

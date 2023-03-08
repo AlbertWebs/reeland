@@ -36,8 +36,12 @@
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/search.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/style.css')}}">
 @include('favicon')
+ <!--Floating WhatsApp css-->
+ <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
 </head>
 <body>
+<!--Div where the WhatsApp will be rendered-->
+<div style="z-index:1000000000000" id="WAButton"></div>
 
 
 
@@ -414,6 +418,26 @@
 <script src="{{asset('theme/js/revolution.extension.video.min.js')}}"></script>
 <script src="{{asset('theme/js/custom.js')}}"></script>
 <script src="{{asset('theme/js/functions.js')}}"></script>
+
+ <!--Floating WhatsApp javascript-->
+ <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+ <script type="text/javascript">
+     $(function () {
+         $('#WAButton').floatingWhatsApp({
+             phone: '+254711880047', //WhatsApp Business phone number
+             headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+             popupMessage: 'Welcome to Reeland Realty Limited, How can we serve you today?', //Popup Message
+             message: 'I have just visited *https://reeland.co.ke*',
+             showPopup: true, //Enables popup display
+             buttonImage: '<img src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
+             //headerColor: 'crimson', //Custom header color
+             //backgroundColor: 'crimson', //Custom background button color
+             position: "left" //Position: left | right
+
+         });
+     });
+ </script>
 
 </body>
 

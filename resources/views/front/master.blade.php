@@ -425,7 +425,7 @@
  <script type="text/javascript">
      $(function () {
          $('#WAButton').floatingWhatsApp({
-             phone: '+254711880047', //WhatsApp Business phone number
+             phone: '+254738171937', //WhatsApp Business phone number
              headerTitle: 'Chat with us on WhatsApp!', //Popup Title
              popupMessage: 'Welcome to Reeland Realty Limited, How can we serve you today?', //Popup Message
              message: 'I have just visited *https://reeland.co.ke*',

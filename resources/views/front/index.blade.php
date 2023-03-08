@@ -186,7 +186,7 @@
             <div class="listing_full">
                   <div class="image">
                     <img alt="image" style="min-height:365px;" src="{{url('/')}}/uploads/products/{{$featured->image_one}}">
-                    <span class="tag_t">{{$featured->pro_condition}}</span>
+                    <span class="tag_t">{{$featured->type}}</span>
                   </div>
                   <div class="listing_full_bg">
                     <div class="listing_inner_full">
@@ -225,7 +225,7 @@
 
 
   <!-- Latest Property -->
-  <section id="property" class="padding index2 bg_light">
+  {{-- <section id="property" class="padding index2 bg_light">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-10">
@@ -261,10 +261,10 @@
                     </div>
                     <div class="favroute clearfix">
                       <p class="pull-md-left">kes {{$best->price}}</p>
-                      {{-- <ul class="pull-right">
+                      <ul class="pull-right">
                         <li><a href="#."><i class="icon-like"></i></a></li>
                         <li><a href="#one" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-                      </ul> --}}
+                      </ul>
                     </div>
                     <div class="toggle_share collapse" id="one">
                       <ul>
@@ -281,13 +281,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- Latest Property Ends -->
 
 
 
   <!--Parallax-->
-  <section id="parallax_four" class="padding">
+  {{-- <section id="parallax_four" class="padding">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 bottom30">
@@ -314,18 +314,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!--About Owner ends-->
 
 
   <!--Testinomials-->
-  <section id="agent" class="padding">
+  {{-- <section id="agent" class="padding">
 
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <h2 class="uppercase">agents you can trust</h2>
-          {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat Aenean elit tellus.</p> --}}
+
         </div>
       </div>
       <div class="row">
@@ -357,7 +357,7 @@
 
       </div>
     </div>
-  </section>
+  </section> --}}
   <!--Testinomials ends-->
 
 
@@ -441,7 +441,7 @@
       <div class="row">
         <div class="col-sm-12 text-center">
             <h2 class="uppercase">Our Partners</h2>
-          <p class="heading_space">Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus.</p>
+          <p class="heading_space">TRUSTED BY</p>
         </div>
       </div>
       <div class="row">

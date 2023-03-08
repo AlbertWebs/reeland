@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('front.master-property')
 
 @section('content')
 @foreach ($Property as $Pro)
@@ -10,22 +10,22 @@
           <h2 class="text-uppercase">{{$Pro->name}}</h2>
           <p class="bottom30">{{$Pro->location}}</p>
           <div id="property-d-1" class="owl-carousel single">
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
-            <div class="item"><img src="{{asset('theme/images/property-details/property-d-1-1.jpg')}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_four}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
           </div>
           <div id="property-d-1-2" class="owl-carousel single">
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-1.jpg')}}" alt="image"/></div>
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-2.jpg')}}" alt="image"/></div>
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-3.jpg')}}" alt="image"/></div>
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-4.jpg')}}" alt="image"/></div>
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-5.jpg')}}" alt="image"/></div>
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-1.jpg')}}" alt="image"/></div>
-            <div class="item" ><img src="{{asset('theme/images/property-details/property-d-s-1-2.jpg')}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_four}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
+            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
           </div>
           <div class="property_meta bg-black bottom40">
             <span><i class="icon-select-an-objecto-tool"></i>{{$Pro->sqft}} sq ft</span>

@@ -189,7 +189,7 @@
     @foreach ($Sale as $sale)
     <div class="row bottom20">
         <div class="col-md-4 col-sm-4 col-xs-6 p-image">
-          <img src="{{asset('theme/images/f-p-1.png')}}" alt="image"/>
+          <img src="{{url('/')}}/uploads/products/{{$sale->image_one}}" alt="image"/>
         </div>
         <div class="col-md-8 col-sm-8 col-xs-6">
           <div class="feature-p-text">
@@ -210,7 +210,7 @@
       @foreach ($Sale as $sale)
       <div class="row bottom20">
           <div class="col-md-4 col-sm-4 col-xs-6 p-image">
-            <img src="{{asset('theme/images/f-p-1.png')}}" alt="image"/>
+            <img src="{{url('/')}}/uploads/products/{{$sale->image_one}}" alt="image"/>
           </div>
           <div class="col-md-8 col-sm-8 col-xs-6">
             <div class="feature-p-text">

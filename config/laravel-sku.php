@@ -15,7 +15,7 @@ return [
          * SKU is based on a specific field of a model
          *
          */
-        'source' => 'title',
+        'source' => 'name',
 
         /*
          * Destination model field name
@@ -33,7 +33,7 @@ return [
          * Shall SKUs be enforced to be unique
          *
          */
-        'unique' => true,
+        'unique' => false,
 
         /*
          * Shall SKUs be generated on create

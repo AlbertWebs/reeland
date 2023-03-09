@@ -27,6 +27,14 @@ Route::group(['prefix'=>'properties'], function(){
     Route::get('/explore/{slung}', [App\Http\Controllers\HomeController::class, 'property'])->name('details');
 });
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode2 = Artisan::call('config:clear');
+
+    // return what you want
+    echo "Done";
+});
+
 Auth::routes();
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/', [App\Http\Controllers\AdminController::class, 'adminHome'])->name('admin.home');

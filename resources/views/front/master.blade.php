@@ -8,19 +8,20 @@
 {{-- Meta Tags --}}
 <title>Reeland Realty Limited - Real Estate in kenya</title>
 <link rel="canonical" href="{{url('/')}}">
-<meta name="description" content="Reeland Realty Limited">
+<meta name="description" content="Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy servic">
 <meta name="author" content="Designekta Studios">
 
 <meta property="og:site_name" content="Reeland Realty Limited">
 <meta property="og:url" content="{{url('/')}}">
 <meta property="og:title" content="Reeland Realty Limited - Real Estate in kenya">
+<meta property="og:image" content="{{url('/')}}/uploads/products/4-Bed-House-For-Sale-reeland-image_one.jpeg" />
 <meta property="og:type" content="website">
-<meta property="og:description" content="Reeland Realty Limited">
+<meta property="og:description" content="Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy servic">
 
 <meta name="twitter:site" content="@reeland">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Reeland Realty Limited - Real Estate in kenya">
-<meta name="twitter:description" content="Reeland Realty Limited">
+<meta name="twitter:description" content="Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy servic">
 {{-- Meta Tags --}}
 
 <link rel="stylesheet" type="text/css" href="{{asset('theme/css/bootstrap.min.css')}}">

@@ -648,6 +648,7 @@ class AdminController extends Controller
             $image_three = "0";
         }
 
+        dd($request->all());
         $Product = new Product;
         $Product->name = $request->title;
         $Product->slung = Str::slug($request->title);

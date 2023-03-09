@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use BinaryCats\Sku\HasSku;
+use BinaryCats\Sku\Concerns\SkuOptions;
 
 class Product extends Model
 {

@@ -663,7 +663,7 @@ class AdminController extends Controller
         $Product->image_one = $image_one;
         $Product->image_two = $image_two;
         $Product->image_three = $image_three;
-        dd($Product->sku);
+        // dd($Product->sku);
         $Product->save();
         Session::flash('message', "Product Has Been Added");
         return Redirect::back();

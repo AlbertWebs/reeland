@@ -210,6 +210,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'generator' => \App\Components\SkuGenerator\CustomSkuGenerator::class,
     ])->toArray(),
 
 ];

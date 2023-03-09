@@ -10,4 +10,13 @@ class Product extends Model
 {
     use HasFactory;
     use HasSku;
+
+    public function skuOptions() : SkuOptions
+    {
+        return SkuOptions::make()
+            ->using('-')
+            ->forceUnique(false)
+            ->generateOnCreate(true)
+            ->refreshOnUpdate(false);
+    }
 }

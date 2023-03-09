@@ -56,7 +56,7 @@ class SkuOptions implements SkuOptionsContract
      */
     public function __construct(array $config)
     {
-        dd($config);
+        // dd($config);
         $this->from($config['source'])
             ->target($config['field'])
             ->using($config['separator'])

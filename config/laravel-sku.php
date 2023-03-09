@@ -33,7 +33,7 @@ return [
          * Shall SKUs be enforced to be unique
          *
          */
-        'unique' => false,
+        'unique' => true,
 
         /*
          * Shall SKUs be generated on create

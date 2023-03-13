@@ -183,37 +183,39 @@
       <div class="row">
         @foreach ($Featured as $featured)
         <div class="col-sm-6">
-            <div class="listing_full">
-                  <div class="image">
-                    <img alt="image" style="min-height:365px;" src="{{url('/')}}/uploads/products/{{$featured->image_one}}">
-                    <span class="tag_t">{{$featured->type}}</span>
-                  </div>
-                  <div class="listing_full_bg">
-                    <div class="listing_inner_full">
-                      <span><a href="#."><i class="icon-like"></i></a></span>
-                      <a style="min-height: 85px;" href="{{url('/')}}/properties/explore/{{$featured->slung}}">
-                        <h3>{{$featured->name}}</h3>
-                        <p>{{$featured->location}}</p>
-                      </a>
-                      <div class="favroute clearfix">
-                        <div class="property_meta">
-                            <span><i class="icon-select-an-objecto-tool"></i>{{$featured->sqft}} sq ft</span>
-                            <span><i class=" icon-bed"></i>{{$featured->bedroom}} Bedrooms</span>
-                            <span><i class="icon-safety-shower"></i>{{$featured->bathroom}} Bathroom</span>
-                            @if($featured->type == "sale")
-
-                            <span class="border-l">Kes {{$featured->price}}</span>
-                            @else
-
-                            <span class="border-l">Kes {{$featured->price}}</span>
-                            @endif
-
-                        </div>
-                      </div>
+            <a href="{{url('/')}}/properties/explore/{{$featured->slung}}">
+                <div class="listing_full">
+                    <div class="image">
+                        <img alt="image" style="min-height:365px;" src="{{url('/')}}/uploads/products/{{$featured->image_one}}">
+                        <span class="tag_t">{{$featured->type}}</span>
                     </div>
-                  </div>
+                    <div class="listing_full_bg">
+                        <div class="listing_inner_full">
+                        <span><a href="#."><i class="icon-like"></i></a></span>
+                        <a style="min-height: 85px;" href="{{url('/')}}/properties/explore/{{$featured->slung}}">
+                            <h3>{{$featured->name}}</h3>
+                            <p>{{$featured->location}}</p>
+                        </a>
+                        <div class="favroute clearfix">
+                            <div class="property_meta">
+                                <span><i class="icon-select-an-objecto-tool"></i>{{$featured->sqft}} sq ft</span>
+                                <span><i class=" icon-bed"></i>{{$featured->bedroom}} Bedrooms</span>
+                                <span><i class="icon-safety-shower"></i>{{$featured->bathroom}} Bathroom</span>
+                                @if($featured->type == "sale")
+
+                                <span class="border-l">Kes {{$featured->price}}</span>
+                                @else
+
+                                <span class="border-l">Kes {{$featured->price}}</span>
+                                @endif
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-            </div>
+            </a>
         @endforeach
 
 

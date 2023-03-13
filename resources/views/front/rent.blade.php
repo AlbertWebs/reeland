@@ -22,7 +22,7 @@
             <div class="col-sm-6">
                 <div class="property_item heading_space">
                   <div class="image">
-                    <a href="#."><img style="min-height:250px;" src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="latest property" class="img-responsive"></a>
+                    <a href="{{url('/')}}/properties/explore/{{$Pro->slung}}"><img style="min-height:250px;" src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="latest property" class="img-responsive"></a>
                     <div class="price clearfix">
                       <span class="tag pull-right">kes {{$Pro->price}} Per Month</span>
                     </div>

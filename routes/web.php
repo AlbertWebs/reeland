@@ -18,6 +18,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/our-services', [App\Http\Controllers\HomeController::class, 'services'])->name('our-services');
 Route::get('/our-services/{slung}', [App\Http\Controllers\HomeController::class, 'service'])->name('our-service');
+Route::post('/search-property', [App\Http\Controllers\HomeController::class, 'search_property'])->name('search-property');
+
 
 Route::group(['prefix'=>'properties'], function(){
     Route::get('/for-rent', [App\Http\Controllers\HomeController::class, 'rent'])->name('for-rent');

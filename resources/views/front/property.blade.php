@@ -227,6 +227,7 @@
           </div>
 
 
+          <hr>
           {{-- <h2 class="text-uppercase bottom20">Virtual Tour</h2>
           <div class="row bottom40">
             <div class="col-md-12 padding-b-20">
@@ -258,17 +259,19 @@
           </div> --}}
           <h2 class="text-uppercase bottom20">Contact Agent</h2>
           <div class="row">
-            <div class="col-sm-4 bottom40">
+            {{-- <div class="col-sm-4 bottom40">
               <div class="agent_wrap">
                 <div class="image">
                   <img src="{{url('/')}}/theme/images/pexels-andrew-personal-training-733500.jpg" alt="Agents">
                 </div>
               </div>
-            </div>
-            <div class="col-sm-4 bottom40">
+            </div> --}}
+            <div class="col-sm-6 bottom40">
               <div class="agent_wrap">
                 <h3>Frank Karmanga </h3>
-                <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer adipiscing eleifend option congue nihil imperdiet doming…</p>
+                <p class="bottom30">
+                    {{-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tempor cum soluta nobis consectetuer adipiscing eleifend option congue nihil imperdiet doming… --}}
+                </p>
                 <table class="agent_contact table">
                   <tbody>
                     <tr class="bottom10">
@@ -281,11 +284,11 @@
                     </tr>
                     <tr>
                       <td><strong>Email Address:</strong></td>
-                      <td class="text-right"><a href="#.">frank.karmanga@reeland.co.ke</a></td>
+                      <td class="text-right"><a href="#.">frank@reeland.co.ke</a></td>
                     </tr>
                     <tr>
                       <td><strong>Email Address:</strong></td>
-                      <td class="text-right"><a href="#.">hello@reeland.co.ke</a></td>
+                      <td class="text-right"><a href="#.">info@reeland.co.ke</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -293,15 +296,15 @@
                 <ul class="social_share">
                   <li><a href="#." class="facebook"><i class="icon-facebook-1"></i></a></li>
                   <li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
-                  <li><a href="#." class="google"><i class="icon-google4"></i></a></li>
-                  <li><a href="#." class="linkden"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#." class="facebook"><i class="fa fa-whatsapp"></i></a></li>
 
+                  <li><a href="#." class="linkden"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://web.whatsapp.com/send?phone=+254738171937&text=I%20have%20just%20visited%20*https://reeland.co.ke*" class="facebook"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-sm-4 bottom40">
+            <div class="col-sm-6 bottom40">
               <form class="callus">
+                @csrf
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Name">
                 </div>

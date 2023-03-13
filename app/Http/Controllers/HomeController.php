@@ -31,6 +31,19 @@ class HomeController extends Controller
         return view('front.index', compact('Featured','Best'));
     }
 
+    public function search_property(Request $request)
+    {
+        $Property = DB::table('products')
+                    ->where('name', 'LIKE', '%'.$request->keyword.'%')
+                    ->where('category',$request->type)
+                    ->where('location', 'LIKE', '%'.$request->location.'%')
+                    ->where('price', '<', ".$request->max.")
+                    ->where('price', '>', ".$request->min.")
+                    ->get();
+        return view('front.search-results', compact('Property'));
+    }
+
+
     public function rent_cat($cat){
         $Category = Category::where('slung',$cat)->get();
         foreach($Category as $Cat){

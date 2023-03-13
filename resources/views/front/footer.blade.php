@@ -115,9 +115,9 @@
           </div>
           <div class="col-md-4 col-sm-7 text-right top15 bottom10">
             <ul class="social_share">
-              <li><a href="#." class="facebook"><i class="icon-facebook-1"></i></a></li>
+              <li><a href="https://www.facebook.com/reelandrealty" class="facebook"><i class="icon-facebook-1"></i></a></li>
               <li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
-              <li><a href="#." class="google"><i class="icon-google4"></i></a></li>
+              <li><a href="https://www.instagram.com/reelandrealty/" class="google"><i class="fa fa-instagram"></i></a></li>
               <li><a href="#." class="linkden"><i class="fa fa-linkedin"></i></a></li>
               <li><a href="#." class="vimo"><i class="icon-vimeo3"></i></a></li>
             </ul>

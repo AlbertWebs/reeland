@@ -294,9 +294,9 @@
                 </table>
                 <div style="border-bottom:1px solid #d3d8dd;" class="bottom15"></div>
                 <ul class="social_share">
-                  <li><a href="#." class="facebook"><i class="icon-facebook-1"></i></a></li>
+                  <li><a href="https://www.facebook.com/reelandrealty" class="facebook"><i class="icon-facebook-1"></i></a></li>
+                  <li><a href="https://www.instagram.com/reelandrealty/" class="instagram"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
-
                   <li><a href="#." class="linkden"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="https://web.whatsapp.com/send?phone=+254738171937&text=I%20have%20just%20visited%20*https://reeland.co.ke*" class="facebook"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>

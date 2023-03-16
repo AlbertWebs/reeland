@@ -17,7 +17,7 @@
             <div class="icons"><i class="icon-icons74"></i></div>
             <ul class="text-center">
               <li><strong>Le'Mac Building, Waiyaki Way,  Church Rd, Nairobi</strong></li>
-              <li>Gitaru Road, Nairobi</li>
+              <li>Waiyaki Way, Nairobi</li>
             </ul>
           </div>
         </div>

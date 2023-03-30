@@ -20,7 +20,7 @@
             data-start="500"
             data-splitin="none"
             data-splitout="none"
-            style="z-index: 6; font-weight:900 !important; text-shadow: 1px 1px 0px #000000;">We Keep it Real on Matters Lands
+            style="z-index: 6; font-weight:900 !important; text-shadow: 1px 1px 0px #000000;">We Keep it Real on Matters Land
           </h1>
 
           <div class="tp-caption  tp-resizeme text-center"
@@ -37,6 +37,70 @@
             <a href="tel:+254 711 880047" class="btn-white border_radius uppercase">Contact Us</a>
           </div>
         </li>
+
+        <!-- SLIDE  -->
+        <li data-transition="fade">
+            <img src="{{asset('theme/images/banner2.jpg')}}"  alt="" data-bgposition="center top" data-bgfit="cover">
+            <h1 class="tp-caption tp-resizeme uppercase text-center"
+              data-x="center" data-hoffset="15"
+              data-y="275" data-width="full"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="500"
+              data-splitin="none"
+              data-splitout="none"
+              style="z-index: 6; font-weight:900 !important; text-shadow: 1px 1px 0px #000000;">We Keep it Real on Matters Land
+            </h1>
+
+            <div class="tp-caption  tp-resizeme text-center"
+              data-x="center" data-hoffset="15"
+              data-y="400"
+              data-width="full"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="800">
+              <a href="#deals" class="btn-blue border_radius uppercase active">Learn More</a>
+              <a href="tel:+254 711 880047" class="btn-white border_radius uppercase">Contact Us</a>
+            </div>
+          </li>
+
+          <!-- SLIDE  -->
+        <li data-transition="fade">
+            <img src="{{asset('theme/images/banner1.jpg')}}"  alt="" data-bgposition="center top" data-bgfit="cover">
+            <h1 class="tp-caption tp-resizeme uppercase text-center"
+              data-x="center" data-hoffset="15"
+              data-y="275" data-width="full"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="500"
+              data-splitin="none"
+              data-splitout="none"
+              style="z-index: 6; font-weight:900 !important; text-shadow: 1px 1px 0px #000000;">We Keep it Real on Matters Land
+            </h1>
+
+            <div class="tp-caption  tp-resizeme text-center"
+              data-x="center" data-hoffset="15"
+              data-y="400"
+              data-width="full"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+              data-start="800">
+              <a href="#deals" class="btn-blue border_radius uppercase active">Learn More</a>
+              <a href="tel:+254 711 880047" class="btn-white border_radius uppercase">Contact Us</a>
+            </div>
+          </li>
       </ul>
     </div>
     <!-- END REVOLUTION SLIDER -->

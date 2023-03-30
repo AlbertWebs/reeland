@@ -362,7 +362,7 @@ jQuery(function($) {
     scrollbarDrag: "true",
     navigation: {
       arrows: {
-        enable: false
+        enable: true
       },
       touch: {
         touchenabled: "on",

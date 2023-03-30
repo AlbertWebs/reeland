@@ -4,121 +4,44 @@
 
 <!--Slider-->
 <div class="rev_slider_wrapper">
-    <div id="rev_eight" class="rev_slider"  data-version="5.0">
+    <div id="rev_slider_full" class="rev_slider"  data-version="5.0">
       <ul>
         <!-- SLIDE  -->
         <li data-transition="fade">
-          <img src="{{asset('theme/images/home9-banner1.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover">
-          <div class=" tp-caption tp-resizeme"
-            data-start="1300"
-            data-x="['left','center','center','center']" data-hoffset="['0','0','0','15']"
-            data-y="['center','center','center','center']" data-voffset="['0','0','0','0']"
-            data-responsive_offset="on"
+          <img src="{{asset('uploads/slider/Investing-in-land-The-pros-and-cons-FB-1200x700-compressed.jpg')}}"  alt="" data-bgposition="center top" data-bgfit="cover">
+          <h1 class="tp-caption tp-resizeme uppercase text-center"
+            data-x="center" data-hoffset="15"
+            data-y="275" data-width="full"
             data-transform_idle="o:1;"
-            data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
-            data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-            <p class="topper">$8,600 Per Month - Apartment</p>
-            <div class="white_cap">
-              <div class="price">For Rent</div>
-              <div class="white_cont bottom10">
-                <h3 class="bottom10 top15">Park Avenue Apartment</h3>
-                <p class="bottom15">Lorem ipsum dolor sit amet, adipiscing elit, <br> sed diam power...</p>
-                <a class="btn-more" href="#.">
-                  <i><img src="{{asset('theme/images/arrowl.png')}}" alt="arrow"></i>
-                  <span>Contact Me</span>
-                  <i><img src="{{asset('theme/images/arrowr.png')}}" alt="arrow"></i>
-                </a>
-              </div>
-              <div class="property_meta clearfix">
-                <div class="col-xs-6"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span></div>
-                <div class="col-xs-6"><span><i class="icon-bed"></i>3 Bedrooms</span> </div>
-              </div>
-              <div class="property_meta clearfix">
-                <div class="col-xs-6"><span><i class="icon-pool-stairs"></i>Swimming Pool</span> </div>
-                <div class="col-xs-6"><span><i class="icon-garage"></i>1 Garage</span></div>
-              </div>
-              <div class="bottom_text top10">
-                <p> <i class="icon-icons74"></i>Runda, Nairobi</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li data-transition="fade">
-          <img src="{{asset('theme/images/home9-banner2.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover">
-          <div class="tp-caption tp-resizeme"
-            data-x="['left','center','center','center']" data-hoffset="['0','0','0','15']"
-            data-y="['center','center','center','center']" data-voffset="['0','0','0','0']"
-            data-responsive_offset="on"
-            data-start="1300"
+            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+            data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+            data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+            data-start="500"
+            data-splitin="none"
+            data-splitout="none"
+            style="z-index: 6; font-weight:900 !important; text-shadow: 1px 1px 0px #000000;">We Keep it Real on Matters Lands
+          </h1>
+
+          <div class="tp-caption  tp-resizeme text-center"
+            data-x="center" data-hoffset="15"
+            data-y="400"
+            data-width="full"
             data-transform_idle="o:1;"
-            data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
-            data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-            <p class="topper">$8,600 Per Month - Apartment</p>
-            <div class="white_cap">
-              <div class="price">For Rent</div>
-              <div class="white_cont bottom10">
-                <h3 class="bottom10 top15">Park Avenue Apartment</h3>
-                <p class="bottom15">Lorem ipsum dolor sit amet, adipiscing elit, <br> sed diam power...</p>
-                <a class="btn-more" href="#.">
-                  <i><img src="{{asset('theme/images/arrowl.png')}}" alt="arrow"></i>
-                  <span>Contact Me</span>
-                  <i><img src="{{asset('theme/images/arrowr.png')}}" alt="arrow"></i>
-                </a>
-              </div>
-              <div class="property_meta clearfix">
-                <div class="col-xs-6"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span></div>
-                <div class="col-xs-6"><span><i class="icon-bed"></i>3 Bedrooms</span> </div>
-              </div>
-              <div class="property_meta clearfix">
-                <div class="col-xs-6"><span><i class="icon-pool-stairs"></i>Swimming Pool</span> </div>
-                <div class="col-xs-6"><span><i class="icon-garage"></i>1 Garage</span></div>
-              </div>
-              <div class="bottom_text top10">
-                <p> <i class="icon-icons74"></i>Runda, Nairobi</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li data-transition="fade">
-          <img src="{{asset('theme/images/home9-banner3.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover">
-          <div class="tp-caption tp-resizeme"
-            data-x="['left','center','center','center']" data-hoffset="['0','0','0','15']"
-            data-y="['center','center','center','center']" data-voffset="['0','0','0','0']"
-            data-responsive_offset="on"
-            data-start="1300"
-            data-transform_idle="o:1;"
-            data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
-            data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
-            <p class="topper">$8,600 Per Month - Apartment</p>
-            <div class="white_cap">
-              <div class="price">For Rent</div>
-              <div class="white_cont bottom10">
-                <h3 class="bottom10 top15">Park Avenue Apartment</h3>
-                <p class="bottom15">Lorem ipsum dolor sit amet, adipiscing elit, <br> sed diam power...</p>
-                <a class="btn-more" href="#.">
-                  <i><img src="{{asset('theme/images/arrowl.png')}}" alt="arrow"></i>
-                  <span>Contact Me</span>
-                  <i><img src="{{asset('theme/images/arrowr.png')}}" alt="arrow"></i>
-                </a>
-              </div>
-              <div class="property_meta clearfix">
-                <div class="col-xs-6"><span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span></div>
-                <div class="col-xs-6"><span><i class="icon-bed"></i>3 Bedrooms</span> </div>
-              </div>
-              <div class="property_meta clearfix">
-                <div class="col-xs-6"><span><i class="icon-pool-stairs"></i>Swimming Pool</span> </div>
-                <div class="col-xs-6"><span><i class="icon-garage"></i>1 Garage</span></div>
-              </div>
-              <div class="bottom_text top10">
-                <p> <i class="icon-icons74"></i>Runda, Nairobi</p>
-              </div>
-            </div>
+            data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+            data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;"
+            data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+            data-mask_out="x:0;y:0;s:inherit;e:inherit;"
+            data-start="800">
+            <a href="#deals" class="btn-blue border_radius uppercase active">Learn More</a>
+            <a href="tel:+254 711 880047" class="btn-white border_radius uppercase">Contact Us</a>
           </div>
         </li>
       </ul>
     </div>
+    <!-- END REVOLUTION SLIDER -->
   </div>
-  <!--Slider ends-->
+
   <!--Best Deal Properties-->
 <section id="deals" class="padding bg_light">
     <div class="container">

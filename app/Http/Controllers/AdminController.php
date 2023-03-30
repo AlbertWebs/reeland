@@ -655,7 +655,7 @@ class AdminController extends Controller
         $Product->meta = $request->meta;
         $Product->category = $request->category;
         $Product->pro_condition = $request->condition;
-
+        $Product->type = $request->type;
         $Product->brand = $request->brand;
         $Product->stock = $request->stock;
         $Product->price_raw = $request->price;

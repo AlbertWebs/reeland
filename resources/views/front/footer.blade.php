@@ -27,7 +27,7 @@
             <ul class="text-center">
               <li><strong>Email Address</strong></li>
               <li><a href="mailto:info@reeland.co.ke">info@reeland.co.ke</a></li>
-              <li><a href="mailto:hello@reeland.co.ke">hello@reeland.co.ke</a></li>
+              {{-- <li><a href="mailto:hello@reeland.co.ke">hello@reeland.co.ke</a></li> --}}
             </ul>
           </div>
         </div>
@@ -39,7 +39,7 @@
           <div class="footer_panel bottom30">
             <a href="#." class="logo bottom30"><img style="max-width:300px" src="{{asset('uploads/Small-Web-Logo.jpg')}}" alt="logo"></a>
             <p class="bottom15">
-              Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.
+              Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.
             </p>
             {{-- <p class="bottom15">If you are interested in castle do not wait and <a href="#.">BUY IT NOW!</a></p> --}}
           </div>
@@ -116,10 +116,10 @@
           <div class="col-md-4 col-sm-7 text-right top15 bottom10">
             <ul class="social_share">
               <li><a href="https://www.facebook.com/reelandrealty" class="facebook"><i class="icon-facebook-1"></i></a></li>
-              <li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
+              <li><a href="https://twitter.com/ReelandRealty" class="twitter"><i class="icon-twitter-1"></i></a></li>
               <li><a href="https://www.instagram.com/reelandrealty/" class="google"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#." class="linkden"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#." class="vimo"><i class="icon-vimeo3"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/reeland-realty-limited/" class="linkden"><i class="fa fa-linkedin"></i></a></li>
+
             </ul>
           </div>
         </div>

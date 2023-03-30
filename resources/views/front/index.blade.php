@@ -125,7 +125,7 @@
       <div class="row">
         <div class="col-sm-10">
           <h2 class="uppercase">About Us</h2>
-          <p class="heading_space">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.</p>
+          <p class="heading_space">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.</p>
         </div>
       </div>
       <div class="row">

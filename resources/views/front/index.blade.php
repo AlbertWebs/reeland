@@ -40,7 +40,7 @@
 
         <!-- SLIDE  -->
         <li data-transition="fade">
-            <img src="{{asset('theme/images/banner2.jpg')}}"  alt="" data-bgposition="center top" data-bgfit="cover">
+            <img src="{{asset('theme/images/home9-banner2.jpg')}}"  alt="" data-bgposition="center top" data-bgfit="cover">
             <h1 class="tp-caption tp-resizeme uppercase text-center"
               data-x="center" data-hoffset="15"
               data-y="275" data-width="full"

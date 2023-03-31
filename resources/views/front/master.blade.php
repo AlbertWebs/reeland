@@ -66,10 +66,10 @@
         <div class="col-md-6 text-right">
           <ul class="breadcrumb_top text-right">
             <li><a href="{{url('/')}}/contact-us"><i class="icon-telephone114"></i>Contact Us</a></li>
-      <li><a href="{{url('/')}}/account/add-property"><i class="icon-icons215"></i>Submit Property</a></li>
-      <li><a href="{{url('/')}}/account/my-properties"><i class="icon-icons215"></i>My Property</a></li>
-      <li><a href="{{url('/')}}/account/profile"><i class="icon-icons230"></i>Profile</a></li>
-      <li><a href="{{url('/')}}/account"><i class="icon-icons179"></i>Login / Register</a></li>
+      <li><a href="{{url('/')}}/admin/admin/addProduct"><i class="icon-icons215"></i>Submit Property</a></li>
+      <li><a href="{{url('/')}}/admin/products"><i class="icon-icons215"></i>My Property</a></li>
+      {{-- <li><a href="{{url('/')}}/admin/SiteSettings"><i class="icon-icons230"></i>Profile</a></li> --}}
+      <li><a href="{{url('/')}}/admin"><i class="icon-icons179"></i>Login / Register</a></li>
           </ul>
         </div>
       </div>

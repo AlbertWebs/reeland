@@ -107,7 +107,7 @@
   </div>
 
   <!--Best Deal Properties-->
-<section id="deals" class="padding bg_light">
+  <section id="deals" class="padding bg_light">
     <div class="container">
       <div class="row">
         <div class="col-sm-10">
@@ -156,6 +156,64 @@
     </div>
   </section>
   <!--Best Deal Properties Ends-->
+
+  <section id="faqs" class="padding_half bottom40 bg_gallery">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-sm-4">
+            	<div class="faq-text margin40">
+                    <h3 style="color:#b3864d"><strong>Vision</strong></h3>
+                    <p class="top15">
+                        To be a revolutionary leader in real estate professional services and consistently offering value for our clients in delivery of explicit results.
+                    </p>
+            	</div>
+                <div class="faq-text margin40">
+                    <h3 style="color:#b3864d"><strong>Mission</strong></h3>
+                    <p class="top15">
+                        To provide the highest level of professional service and build trusting relationships in order to achieve the highest rates of client retention and customer satisfaction in the real estate industry.
+                    </p>
+            	</div>
+            </div>
+
+            <div class="col-sm-8">
+            	<div class="faq-text margin40">
+                    <h3 style="color:#b3864d"><strong>Core Values</strong></h3>
+            	</div>
+                <div class="faq-text margin">
+                    <h5><strong>Professionalism</strong></h5>
+                    <p class="top15">
+                        Reeland Realty is committed to effectively meet our obligations to clients through provision of high-quality real estate services and building trusting relationships while maintaining a respectable space and ethics with our clients.
+                    </p>
+            	</div>
+                <div class="faq-text margin">
+                    <h5><strong>Excellence</strong></h5>
+                    <p class="top15">
+                        We acknowledge that achieving real success in the Real Estate Industry takes years of client dedication and market knowledge. We are therefore committed to understanding our clients needs, the market and knowledge acquisition that will boost our excellence in the practice.
+                    </p>
+            	</div>
+                <div class="faq-text margin">
+                    <h5><strong>Integrity</strong></h5>
+                    <p class="top15">
+                        We value honesty, transparency and a commitment to doing what’s right for our clients and the society.
+                    </p>
+            	</div>
+                <div class="faq-text margin">
+                    <h5><strong>Innovation</strong></h5>
+                    <p class="top15">
+                        At Reeland Realty we always challenge ourselves to find better ways of meeting the needs of our team, clients and the society. We are keen on creative solutions to complex ideas and taking calculated risks.
+                    </p>
+            	</div>
+                <div class="faq-text margin">
+                    <h5><strong>Service</strong></h5>
+                    <p class="top15">
+                        Reeland Realty is dedicated to providing a quality experience to the clients we serve.
+                    </p>
+            	</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FAQ Ends-->
 
 
   <!--Deals-->

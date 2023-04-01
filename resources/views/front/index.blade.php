@@ -232,7 +232,7 @@
                 <div class="listing_full">
                     <div class="image">
                         <img alt="image" style="min-height:365px;" src="{{url('/')}}/uploads/products/{{$featured->image_one}}">
-                        <span class="tag_t" style="text-transform: capitalize"> {{$featured->type}}</span>
+                        <span class="tag_t" style="text-transform: capitalize">@if($featured->type == "sale") For Sale @else To Let @endif</span>
                     </div>
                     <div class="listing_full_bg">
                         <div class="listing_inner_full">

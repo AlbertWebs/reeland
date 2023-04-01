@@ -94,7 +94,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
         <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="{{url('/')}}"><img style="max-width:200px" src="{{asset('uploads/Small-Web-Logo.jpg')}}" class="logo" alt=""></a>
+        <a class="navbar-brand" href="{{url('/')}}"><img style="max-width:350px" src="{{asset('uploads/Longer-Web-Logo.jpg')}}" class="logo" alt=""></a>
       </div>
       <!-- End Header Navigation -->
       <div class="collapse navbar-collapse" id="navbar-menu">

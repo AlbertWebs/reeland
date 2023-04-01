@@ -115,7 +115,7 @@
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Rent </a>
                 <ul class="dropdown-menu">
                     @foreach ($Category as $Cat)
-                    <li><a href="{{url('properties/for-rent')}}{{$Cat->slung}}">{{$Cat->title}} for Sale</a></li>
+                    <li><a href="{{url('properties/for-rent')}}/{{$Cat->slung}}">{{$Cat->title}} for Sale</a></li>
                   @endforeach
                   </ul>
               </li>

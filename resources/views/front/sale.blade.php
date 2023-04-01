@@ -27,7 +27,7 @@
                     <div class="price clearfix">
                       <span class="tag pull-right">kes {{$Pro->price}}</span>
                     </div>
-                    <span class="tag_t">For Sale</span>
+                    <span class="tag_t">@if($Pro->type == "sale") For Sale @else To Let @endif</span>
                     <span class="tag_l">Featured</span>
                   </div>
                   <div class="proerty_content">

@@ -95,6 +95,23 @@
                                 <div class="section-space col s12"></div>
                             </div>
 
+                            <div class="row">
+
+                                {{--  --}}
+                                <div class="input-field col s12">
+                                    <select required name="type" class="icons" id="mydiv">
+
+                                        <option value="{{$Product->type}}" selected>{{$Product->type}}</option>
+                                        <option value="For Sale" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Sale</option>
+                                        <option value="To Let" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Rent</option>
+                                    </select>
+                                    <label>Choose Type</label>
+                                </div>
+
+                                {{--  --}}
+                                <div class="section-space col s12"></div>
+                            </div>
+
 
 
 

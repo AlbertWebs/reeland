@@ -4271,4 +4271,8 @@ ul.social_share {
 }
 }
 
-
+@media screen and (max-width: 940px){
+    .padding_halfed{
+       margin-top:-100px !important;
+    }
+}

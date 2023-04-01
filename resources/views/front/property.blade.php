@@ -257,7 +257,7 @@
               </div>
             </div>
           </div> --}}
-          <h2 class="text-uppercase bottom20">Contact Agent</h2>
+          <h2 class="text-uppercase bottom20">Contact</h2>
           <div class="row">
             {{-- <div class="col-sm-4 bottom40">
               <div class="agent_wrap">

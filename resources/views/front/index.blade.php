@@ -157,7 +157,7 @@
   </section>
   <!--Best Deal Properties Ends-->
 
-  <section id="faqs" class="padding_half bottom40 bg_gallery">
+  <section id="faqs" class="padding_half padding_halfed bottom40 bg_gallery">
 	<div class="container">
     	<div class="row">
         	<div class="col-sm-4">
@@ -217,12 +217,12 @@
 
 
   <!--Deals-->
-  <section id="deal" class="padding">
+  <section id="deal" class="paddings">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <h2 class="uppercase">Best Deal Properties</h2>
-          <p class="heading_space">We have Properties in these Areas View a list of Featured Properties.</p>
+          <p class="heading_space"> Please have a view of our latest listing and contact us for further information on property of your choice</p>
         </div>
       </div>
       <div class="row">
@@ -232,7 +232,7 @@
                 <div class="listing_full">
                     <div class="image">
                         <img alt="image" style="min-height:365px;" src="{{url('/')}}/uploads/products/{{$featured->image_one}}">
-                        <span class="tag_t">{{$featured->type}}</span>
+                        <span class="tag_t" style="text-transform: capitalize"> {{$featured->type}}</span>
                     </div>
                     <div class="listing_full_bg">
                         <div class="listing_inner_full">

@@ -151,7 +151,7 @@
               </ul>
             </div>
           </div> --}}
-          <h2 class="text-uppercase">Features</h2>
+          {{-- <h2 class="text-uppercase">Features</h2>
           <p class="bottom20">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.
           </p>
           <div class="row bottom40">
@@ -227,7 +227,7 @@
           </div>
 
 
-          <hr>
+          <hr> --}}
           {{-- <h2 class="text-uppercase bottom20">Virtual Tour</h2>
           <div class="row bottom40">
             <div class="col-md-12 padding-b-20">
@@ -303,19 +303,28 @@
               </div>
             </div>
             <div class="col-sm-6 bottom40">
-              <form class="callus">
+                <center>
+                    @if(Session::has('message'))
+                                  <div class="alert alert-success">{{ Session::get('message') }}</div>
+                   @endif
+
+                   @if(Session::has('messageError'))
+                                  <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
+                   @endif
+                </center>
+              <form class="callus" method="POST" action="{{url('/')}}/send-message">
                 @csrf
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" class="form-control" name="name" placeholder="Name">
                 </div>
                 <div class="form-group">
-                  <input type="tel" class="form-control" placeholder="Phone Number">
+                  <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Message"></textarea>
+                  <textarea class="form-control" placeholder="Message" name="message"></textarea>
                 </div>
                 <input type="submit" class="btn-blue uppercase border_radius" value="submit now">
               </form>

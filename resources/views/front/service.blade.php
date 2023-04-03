@@ -11,7 +11,7 @@
        <div class="row">
           <div class="col-md-12 text-center">
              <h1 class="text-uppercase">Our Services</h1>
-             <p style="max-width:600px; margin:0px auto">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya on 16th May, 2022. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.</p>
+             <p style="max-width:600px; margin:0px auto">Reeland Realty Limited is a real estate professional limited liability company incorporated in Kenya. The company specializes on property valuations, management and estate agency, project appraisal and real estate consultancy services.</p>
              <ol class="breadcrumb text-center">
                 <li><a href="#.">Home</a></li>
                 <li><a href="#.">Services</a></li>
@@ -67,8 +67,8 @@
 
             <div class="news-2-tag">
             <div class="col-md-5 col-sm-5 col-xs-12 top15">
-              <h4>Tags:</h4>
-              <p class="p-font-15">house , bedroom, bed</p>
+              {{-- <h4>Tags:</h4> --}}
+              {{-- <p class="p-font-15">house , bedroom, bed</p> --}}
             </div>
 
             <div class="col-md-7 col-sm-7 col-xs-12 text-right">
@@ -135,7 +135,7 @@
 
 
           <br><br>
-          <div class="row padding-t-55">
+          {{-- <div class="row padding-t-55">
             <div class="col-md-12 padding-b-20">
               <h3>Tag</h3>
             </div>
@@ -152,7 +152,7 @@
               </div>
 
             </div>
-          </div>
+          </div> --}}
 
         </aside>
 

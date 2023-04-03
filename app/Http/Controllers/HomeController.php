@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Message;
+use Session;
+use Redirect;
 
 class HomeController extends Controller
 {
@@ -94,6 +97,11 @@ class HomeController extends Controller
     }
 
 
+    public function send_message(Request $request){
+        Message::SendMail($request->name, $request->email, $request->phone, $request->message);
+        Session::flash('message', "Message Has Been Sent");
+        return Redirect::back();
+    }
 
 
 }

@@ -19,6 +19,8 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'
 Route::get('/our-services', [App\Http\Controllers\HomeController::class, 'services'])->name('our-services');
 Route::get('/our-services/{slung}', [App\Http\Controllers\HomeController::class, 'service'])->name('our-service');
 Route::post('/search-property', [App\Http\Controllers\HomeController::class, 'search_property'])->name('search-property');
+Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'send_message'])->name('send-message');
+
 
 
 Route::group(['prefix'=>'properties'], function(){

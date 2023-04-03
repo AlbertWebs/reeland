@@ -104,6 +104,19 @@
               </li>
 
               <li class="dropdown">
+                <a href="#." class="dropdown-toggle" data-toggle="dropdown">Our Services</a>
+                <ul class="dropdown-menu">
+                    <?php
+                       $Category = DB::table('services')->get();
+                    ?>
+                    @foreach ($Category as $Cat)
+                      <li><a href="{{url('/our-services')}}/{{$Cat->slung}}">{{$Cat->title}}</a></li>
+                    @endforeach
+                  </ul>
+              </li>
+
+
+              <li class="dropdown">
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Sale </a>
                 <ul class="dropdown-menu">
                     <?php
@@ -118,14 +131,11 @@
                 <a href="#." class="dropdown-toggle" data-toggle="dropdown">For Rent </a>
                 <ul class="dropdown-menu">
                     @foreach ($Category as $Cat)
-                    <li><a href="{{url('properties/for-rent')}}/{{$Cat->slung}}">{{$Cat->title}} for Sale</a></li>
+                    <li><a href="{{url('properties/for-rent')}}/{{$Cat->slung}}">{{$Cat->title}} for Rent</a></li>
                   @endforeach
                   </ul>
               </li>
 
-              <li class="dropdown active">
-                <a href="{{url('/')}}/our-services">Our Services  </a>
-              </li>
 
 
               <li><a href="tel:+254 711 880047"><span class="fa fa-phone"></span> Talk to Us</a></li>

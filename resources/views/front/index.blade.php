@@ -484,7 +484,7 @@
 
   <!--Partners-->
   <section id="logos" class="bg_light">
-    <div class="container partner2 padding">
+    <div class="container partner2" style="padding:20px;">
       <div class="row">
         <div class="col-sm-12 text-center">
             <h2 class="uppercase">Our Partners</h2>

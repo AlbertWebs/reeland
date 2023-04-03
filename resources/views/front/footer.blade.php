@@ -4,7 +4,7 @@
         <div class="col-sm-4 text-center">
           <div class="info-box first">
             <div class="icons"><i class="icon-telephone114"></i></div>
-            <ul class="text-center">
+            <ul class="text-center hide-list-styles">
               <li><strong>Phone Number</strong></li>
               <li>+254 738 171937</li>
               <li>+254 711 880047</li>
@@ -15,7 +15,7 @@
         <div class="col-sm-4 text-center">
           <div class="info-box">
             <div class="icons"><i class="icon-icons74"></i></div>
-            <ul class="text-center">
+            <ul class="text-center hide-list-styles">
               <li><strong>Le'Mac Building, Waiyaki Way,  Church Rd, Nairobi</strong></li>
               <li>Westlands, Nairobi</li>
             </ul>
@@ -24,7 +24,7 @@
         <div class="col-sm-4 text-center">
           <div class="info-box">
             <div class="icons"><i class="icon-icons142"></i></div>
-            <ul class="text-center">
+            <ul class="text-center hide-list-styles">
               <li><strong>Email Address</strong></li>
               <li><a href="mailto:info@reeland.co.ke">info@reeland.co.ke</a></li>
               {{-- <li><a href="mailto:hello@reeland.co.ke">hello@reeland.co.ke</a></li> --}}
@@ -61,7 +61,7 @@
                     </ul>
                   </td>
                   <td class="text-right">
-                    <ul class="links text-left">
+                    <ul class="links text-left hide-list-styles">
                       <li><a href="{{url('/')}}"><i></i>Home</a></li>
                       <li class="active"><a href="{{url('/')}}/our-services"><i></i>Our Services</a></li>
                       <li><a href="{{url('/')}}/contact-us"><i></i>Contact Us</a></li>

@@ -4276,3 +4276,7 @@ ul.social_share {
        margin-top:-100px !important;
     }
 }
+
+.hide-list-styles{
+    list-style: none !important;
+}

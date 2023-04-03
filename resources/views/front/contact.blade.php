@@ -46,23 +46,31 @@
                       </div>
 
                       <div class="row">
-                        <form action="#" class="callus">
-                          <div class="col-md-12">
-                            <div class="single-query form-group">
-                              <input type="text" placeholder="Your Name" class="keyword-input">
-                              </div>
-                              <div class="single-query form-group">
-                              <input type="text" placeholder="Phone Number" class="keyword-input">
-                            </div>
-                            <div class="single-query form-group">
-                              <input type="text" placeholder="Email Adress" class="keyword-input">
-                            </div>
-                            <div class="single-query form-group">
-                              <textarea placeholder="Massege" class="form-control"></textarea>
-                            </div>
-                            <input type="submit" value="submit now" class="btn-blue">
-                            </div>
-                        </form>
+                        <center>
+                            @if(Session::has('message'))
+                                          <div class="alert alert-success">{{ Session::get('message') }}</div>
+                           @endif
+
+                           @if(Session::has('messageError'))
+                                          <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
+                           @endif
+                        </center>
+                      <form class="callus" method="POST" action="{{url('/')}}/send-message">
+                        @csrf
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" placeholder="Message" name="message"></textarea>
+                        </div>
+                        <input type="submit" class="btn-blue uppercase border_radius" value="submit now">
+                      </form>
 
                       </div>
 

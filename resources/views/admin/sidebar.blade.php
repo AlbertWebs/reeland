@@ -21,7 +21,7 @@
             </li>
 
             {{--  --}}
-            <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-file-image-o" aria-hidden="true"></i> Home Page Slider  </a>
+            {{-- <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-file-image-o" aria-hidden="true"></i> Home Page Slider  </a>
                 <div class="collapsible-body left-sub-menu">
                     <ul>
                         <li><a href="{{url('/')}}/admin/sliders">All Sliders</a>
@@ -30,20 +30,20 @@
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
             {{--  --}}
 
             {{--  --}}
-            <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-file-image-o" aria-hidden="true"></i> Banners </a>
+            {{-- <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-file-image-o" aria-hidden="true"></i> Banners </a>
                 <div class="collapsible-body left-sub-menu">
                     <ul>
                         <li><a href="{{url('/')}}/admin/banners">All Banners</a>
                         </li>
-                        {{-- <li><a href="{{url('/')}}/admin/addBanner">Add Banners</a>
-                        </li> --}}
+                        <li><a href="{{url('/')}}/admin/addBanner">Add Banners</a>
+                        </li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
             {{--  --}}
 
               {{--  --}}

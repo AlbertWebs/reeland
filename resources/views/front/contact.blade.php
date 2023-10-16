@@ -29,7 +29,9 @@
                            <p><i class=" icon-icons142"></i> info@reeland.co.ke</p>
 
                            <p><i class="icon-browser2"></i>www.reeland.co.ke</p>
-                           <p><i class="icon-icons74"></i> Le'Mac Building, Waiyaki Way,  Church Rd, Nairobi</p>
+                           <p><i class="icon-icons74"></i> Kampus Towers -2nd Floor
+                            University Way
+                            Nairobi City Centre</p>
                         </div>
                       <ul class="social_share bottom20">
               <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i></a></li>

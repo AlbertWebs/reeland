@@ -483,7 +483,7 @@
 
 
   <!--Partners-->
-  <section id="logos" class="bg_light">
+  {{-- <section id="logos" class="bg_light">
     <div class="container partner2" style="padding:20px;">
       <div class="row">
         <div class="col-sm-12 text-center">
@@ -541,7 +541,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!--Partners Ends-->
 
 @endsection

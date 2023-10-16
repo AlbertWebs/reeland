@@ -16,8 +16,9 @@
           <div class="info-box">
             <div class="icons"><i class="icon-icons74"></i></div>
             <ul class="text-center hide-list-styles">
-              <li><strong>Le'Mac Building, Waiyaki Way,  Church Rd, Nairobi</strong></li>
-              <li>Westlands, Nairobi</li>
+              <li><strong>Kampus Towers -2nd Floor
+                University Way
+                Nairobi City Centre </li>
             </ul>
           </div>
         </div>

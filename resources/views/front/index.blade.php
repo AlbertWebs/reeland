@@ -227,7 +227,7 @@
       </div>
       <div class="row">
         @foreach ($Featured as $featured)
-        <div class="col-sm-6">
+        <div class="col-sm-4">
             <a href="{{url('/')}}/properties/explore/{{$featured->slung}}">
                 <div class="listing_full">
                     <div class="image">

@@ -29,8 +29,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $Featured = DB::table('products')->orderBy('id','DESC')->where('featured','1')->limit('4')->get();
-        $Best = DB::table('products')->orderBy('id','ASC')->where('featured','1')->limit('4')->get();
+        $Featured = DB::table('products')->orderBy('id','DESC')->where('featured','1')->limit('6')->get();
+        $Best = DB::table('products')->orderBy('id','ASC')->where('featured','1')->limit('6')->get();
         return view('front.index', compact('Featured','Best'));
     }
 

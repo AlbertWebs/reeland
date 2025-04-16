@@ -29,8 +29,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $Featured = DB::table('products')->orderBy('id','DESC')->where('featured','1')->limit('6')->get();
-        $Best = DB::table('products')->orderBy('id','ASC')->where('featured','1')->limit('6')->get();
+        $Featured = DB::table('products')->orderBy('id','DESC')->where('featured','1')->paginate('6');
+        $Best = DB::table('products')->orderBy('id','ASC')->where('featured','1')->limit('9')->get();
         return view('front.index', compact('Featured','Best'));
     }
 
@@ -50,7 +50,7 @@ class HomeController extends Controller
     public function rent_cat($cat){
         $Category = Category::where('slung',$cat)->get();
         foreach($Category as $Cat){
-            $Property = DB::table('products')->where('category',$Cat->id)->where('type','rent')->get();
+            $Property = DB::table('products')->where('category',$Cat->id)->where('type','rent')->paginate('6');
             // dd($Property);
             return view('front.rent', compact('Property'));
         }
@@ -59,7 +59,7 @@ class HomeController extends Controller
     public function sale_cat($cat){
         $Category = Category::where('slung',$cat)->get();
         foreach($Category as $Cat){
-            $Property = DB::table('products')->where('category',$Cat->id)->where('type','sale')->get();
+            $Property = DB::table('products')->where('category',$Cat->id)->where('type','sale')->paginate('6');
             // dd($Property);
             return view('front.sale', compact('Property'));
         }
@@ -73,12 +73,13 @@ class HomeController extends Controller
     }
 
     public function rent(){
-        $Rent = DB::table('products')->where('category','rent')->limit('4')->get();
-        return view('front.rent', compact('Rent'));
+        $Property = DB::table('products')->where('type','rent')->paginate(6);
+        return view('front.rent', compact('Property'));
     }
 
     public function sale(){
-        return view('front.sale');
+        $Property = DB::table('products')->where('type','rent')->paginate(6);
+        return view('front.sale', compact('Property'));
     }
 
     public function property($slung){

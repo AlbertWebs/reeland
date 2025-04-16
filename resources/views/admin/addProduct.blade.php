@@ -113,7 +113,7 @@
                                 <div class="input-field col s12">
                                     <select required name="type" class="icons" id="mydiv">
                                         <option value="" disabled selected>Choose your Type</option>
-                                        <option value="For Sale" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Sale</option>
+                                        <option value="sale" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Sale</option>
                                         <option value="To Let" data-icon="{{url('/')}}/theme/images/icon.png" class="circle">Rent</option>
                                     </select>
                                     <label>Choose Type</label>

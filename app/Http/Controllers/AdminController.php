@@ -654,7 +654,7 @@ class AdminController extends Controller
         $Product->slung = Str::slug($request->title);
         $Product->meta = $request->meta;
         $Product->category = $request->category;
-        $Product->pro_condition = $request->condition;
+        $Product->location = $request->location;
         $Product->type = $request->type;
         $Product->brand = $request->brand;
         $Product->stock = $request->stock;

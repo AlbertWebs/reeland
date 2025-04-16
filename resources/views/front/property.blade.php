@@ -11,21 +11,39 @@
           <p class="bottom30">{{$Pro->location}}</p>
           <div id="property-d-1" class="owl-carousel single">
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
+            @if($Pro->image_two == "0" OR $Pro->image_two == null)
+
+            @else
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
+            @endif
+            @if($Pro->image_three == "0" OR $Pro->image_three == null)
+
+            @else
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
+            @endif
+            @if($Pro->image_four == "0" OR $Pro->image_four == null)
+
+            @else
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_four}}" alt="image"/></div>
-            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
-            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
-            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
+            @endif
           </div>
           <div id="property-d-1-2" class="owl-carousel single">
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
+            @if($Pro->image_two == "0" OR $Pro->image_two == null)
+
+            @else
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
+            @endif
+            @if($Pro->image_three == "0" OR $Pro->image_three == null)
+
+            @else
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
+            @endif
+            @if($Pro->image_four == "0" OR $Pro->image_four == null)
+
+            @else
             <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_four}}" alt="image"/></div>
-            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_one}}" alt="image"/></div>
-            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_two}}" alt="image"/></div>
-            <div class="item"><img src="{{url('/')}}/uploads/products/{{$Pro->image_three}}" alt="image"/></div>
+            @endif
           </div>
           <div class="property_meta bg-black bottom40">
             <span><i class="icon-select-an-objecto-tool"></i>{{$Pro->sqft}} sq ft</span>
@@ -57,7 +75,7 @@
                   @else
                   <tr>
                     <td><b>Price</b></td>
-                    <td class="text-right">kes {{$Pro->price}} / month</td>
+                    <td class="text-right">kes {{number_format($Pro->price)}} / month</td>
                   </tr>
                   @endif
 

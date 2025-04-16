@@ -121,7 +121,7 @@
           <div class="feature-p-text">
             <h4>{{$sale->name}}</h4>
             <p class="bottom15">{{$sale->location}}</p>
-            <a href="#.">kes {{$sale->price}}</a>
+            <a href="#.">kes {{number_format($sale->price)}}</a>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
             <div class="feature-p-text">
               <h4>{{$sale->name}}</h4>
               <p class="bottom15">{{$sale->location}}</p>
-              <a href="#.">kes {{$sale->price}}</a>
+              <a href="#.">kes {{number_format($sale->price)}}</a>
             </div>
           </div>
         </div>

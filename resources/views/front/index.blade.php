@@ -227,15 +227,15 @@
       </div>
       <div class="row">
         @foreach ($Featured as $featured)
-        <div class="col-sm-4">
-            <a href="{{url('/')}}/properties/explore/{{$featured->slung}}">
+
+            {{-- <a href="{{url('/')}}/properties/explore/{{$featured->slung}}">
                 <div class="listing_full">
                     <div class="image">
                         <img alt="image" style="min-height:365px;" src="{{url('/')}}/uploads/products/{{$featured->image_one}}">
                         <span class="tag_t" style="text-transform: capitalize">@if($featured->type == "sale") For Sale @else To Let @endif</span>
                     </div>
                     <div class="listing_full_bg">
-                        <div class="listing_inner_full">
+                        <div class="listing_inner_full" style="min-height:270px;">
                         <span><a href="#."><i class="icon-like"></i></a></span>
                         <a style="min-height: 85px;" href="{{url('/')}}/properties/explore/{{$featured->slung}}">
                             <h3>{{$featured->name}}</h3>
@@ -260,11 +260,46 @@
                     </div>
                     </div>
                 </div>
-            </a>
+            </a> --}}
+
+
+
+
+
+            <div class="cbp-item latest @if($featured->type == "sale") sale @endif" style="width: 360px; left: 0px; top: 0px;"><div class="cbp-item-wrapper">
+                <div class="property_item">
+                  <div class="image">
+                    <a href="{{url('/')}}/properties/explore/{{$featured->slung}}"><img style="width:358px; height:358px; object-fit:cover" src="{{url('/')}}/uploads/products/{{$featured->image_one}}" alt="latest property" class="img-responsive"></a>
+                    <div class="price clearfix">
+                      <span class="tag pull-right"> @if($featured->type == "sale") Kes. {{number_format($featured->price)}} @else Kes. {{number_format($featured->price)}} Per Month @endif</span>
+                    </div>
+
+                    <span class="tag_t">For @if($featured->type == "sale") Sale @else Rent @endif </span>
+                    {{-- <span class="tag_l">Featured</span> --}}
+                  </div>
+                  <div class="proerty_content">
+                    <div class="proerty_text">
+                      <h3 style="min-height:105px" class="captlize"><a href="{{url('/')}}/properties/explore/{{$featured->slung}}">{{$featured->name}}</a></h3>
+                      <p>{{$featured->location}}</p>
+                    </div>
+                    <div class="property_meta transparent">
+                        <span><i class="icon-select-an-objecto-tool"></i>{{$featured->sqft}} sq ft</span>
+                        <span><i class=" icon-bed"></i>{{$featured->bedroom}} Bedrooms</span>
+                        <span><i class="icon-safety-shower"></i>{{$featured->bathroom}} Bathroom</span>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
         @endforeach
 
 
-      </div>
+        {{$Featured}}
+
+
     </div>
   </section>
   <!--Deals ends-->
